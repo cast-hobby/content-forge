@@ -1,0 +1,48 @@
+{
+  "name": "content-forge",
+  "version": "1.0.0",
+  "description": "Editorial content pipeline for personal brands and boutique agencies. A gift from Alexander Cast · UGC Colombia × Kreoon.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Alexander Cast",
+    "url": "https://ugccolombia.co"
+  },
+  "homepage": "https://github.com/AlexanderKast/content-forge",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexanderKast/content-forge.git"
+  },
+  "keywords": [
+    "content-generation",
+    "instagram",
+    "carousel",
+    "ai",
+    "gemini",
+    "nanobanana",
+    "personal-brand",
+    "ugc",
+    "claude-code"
+  ],
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "analyze-character": "node scripts/analyze-character.mjs",
+    "ship": "node scripts/ship-content.mjs",
+    "generate": "node scripts/generate-social.mjs",
+    "compose": "node scripts/compose-overlay.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "sharp": "^0.33.0",
+    "@fontsource/anton": "^5.0.0",
+    "@fontsource/inter": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "picocolors": "^1.0.0",
+    "prompts": "^2.4.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

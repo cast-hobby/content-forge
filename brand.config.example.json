@@ -1,0 +1,140 @@
+{
+  "$schema": "./brand.config.schema.json",
+  "_comment": "Este es un ejemplo de brand.config.json. El wizard (npm run setup) genera el tuyo real.",
+
+  "brand": {
+    "name": "Laura Méndez",
+    "tagline": "Acompaño a emprendedoras a construir marcas personales que venden",
+    "type": "personal",
+    "industry": "coaching",
+    "handle": "@lauramendezco",
+    "website": "https://lauramendez.co",
+    "country": "Colombia",
+    "timezone": "America/Bogota",
+    "primaryLanguage": "es"
+  },
+
+  "colors": {
+    "primary": "#C27B3E",
+    "dark": "#1A1A1A",
+    "light": "#F7F3EC",
+    "grayDark": "#3D3D3C",
+    "grayLight": "#BDBCBC",
+    "white": "#FFFFFF"
+  },
+
+  "fonts": {
+    "display": "Anton",
+    "sans": "Inter",
+    "displayUrl": null,
+    "sansUrl": null
+  },
+
+  "logo": {
+    "darkVariant": "brand-assets/logo-dark.png",
+    "lightVariant": "brand-assets/logo-light.png",
+    "clearspaceRatio": 0.022
+  },
+
+  "voice": {
+    "style": "friendly-expert",
+    "styleDescription": "Amiga que sabe. Directa pero cálida. Nunca moraliza.",
+    "forbiddenPhrases": [
+      "hola familia",
+      "mi gente linda",
+      "te va a cambiar la vida",
+      "dale like si",
+      "no te lo pierdas"
+    ],
+    "preferredPhrases": [
+      "La verdad es que...",
+      "Esto funciona porque...",
+      "Después de [N] meses viendo...",
+      "Nadie te dice que..."
+    ]
+  },
+
+  "character": {
+    "enabled": true,
+    "mode": "personal",
+    "name": "Laura",
+    "referenceImages": [
+      "brand-assets/character/01-frontal-neutral.jpg",
+      "brand-assets/character/02-tres-cuartos-sonriendo.jpg",
+      "brand-assets/character/03-perfil-pensativo.jpg",
+      "brand-assets/character/04-plano-medio-outfit.jpg",
+      "brand-assets/character/05-retrato-serio.jpg",
+      "brand-assets/character/06-contrapicado-exterior.jpg"
+    ],
+    "descriptionFile": "brand-assets/character/character.md",
+    "useInSlides": "auto",
+    "maxRefsPerCall": 4
+  },
+
+  "content": {
+    "defaultPlatform": "ig-carousel",
+    "defaultSlideCount": 10,
+    "pillarMix": {
+      "educativo": 0.35,
+      "bts": 0.20,
+      "casos": 0.15,
+      "debate": 0.15,
+      "estrategico": 0.15
+    },
+    "cadence": {
+      "ig-carousel": { "preferredDays": ["Tue", "Thu", "Sat"], "preferredHour": "19:00" },
+      "reel": { "preferredDays": ["Mon", "Wed", "Fri"], "preferredHour": "20:00" },
+      "story": { "preferredDays": ["daily"], "preferredHour": "09:00" },
+      "linkedin": { "preferredDays": ["Tue", "Thu"], "preferredHour": "08:00" }
+    }
+  },
+
+  "output": {
+    "baseDir": "output/social",
+    "keepRawBackup": true,
+    "showFooter": false,
+    "footerText": "made with content-forge",
+    "calendarDir": "output/calendar"
+  },
+
+  "hashtags": {
+    "niche": [
+      "#TuNichoEspecifico1",
+      "#TuNichoEspecifico2",
+      "#TuNichoEspecifico3",
+      "#TuNichoEspecifico4",
+      "#TuNichoEspecifico5"
+    ],
+    "mid": [
+      "#MarketingDigital",
+      "#MarcaPersonal",
+      "#EstrategiaDigital",
+      "#ContentMarketing",
+      "#RedesSociales",
+      "#Emprendimiento",
+      "#MujeresEmprendedoras",
+      "#Liderazgo",
+      "#Coaching",
+      "#DesarrolloPersonal"
+    ],
+    "broad": [
+      "#Emprendimiento",
+      "#Marketing",
+      "#Negocios",
+      "#Instagram",
+      "#LinkedIn"
+    ]
+  },
+
+  "leadMagnet": {
+    "name": "Guía de Marca Personal 2026",
+    "url": "https://lauramendez.co/guia-marca-personal",
+    "bioLinkLabel": "Link en bio"
+  },
+
+  "meta": {
+    "version": "1.0.0",
+    "createdAt": "2026-04-17T00:00:00Z",
+    "setupCompletedAt": "2026-04-17T00:05:00Z"
+  }
+}

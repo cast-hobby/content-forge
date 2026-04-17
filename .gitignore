@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# User brand assets (NEVER commit — these are personal/private)
+brand.config.json
+brand-assets/character/*
+!brand-assets/character/.gitkeep
+!brand-assets/character/README.md
+brand-assets/logo-*.png
+brand-assets/logo-*.svg
+brand-assets/logo-*.jpg
+
+# Generated content (user's own work — not for the template repo)
+output/
+content-generated/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Claude Code local
+.claude/settings.local.json
+.claude/worktrees/
+.claude/*.lock
