@@ -13,11 +13,19 @@ La mayoría de herramientas de contenido con IA producen uno de dos extremos:
 - **Plantillas genéricas** (Canva, templates Figma): se ven bonitas pero indistinguibles entre mil cuentas.
 - **"Wrappers" de ChatGPT**: textos decentes con imágenes stock que no casan con tu marca.
 
-Content Forge es otra cosa. Es el mismo pipeline editorial que uso todos los días en **UGC Colombia** — imágenes generadas con Nanobanana, tipografía aplicada con sharp + resvg, layout analizado slide por slide, voz de marca en tu idioma. Calidad de agencia boutique, sin agencia.
+Content Forge es otra cosa. Es el mismo pipeline editorial que uso todos los días en **UGC Colombia** — composiciones cinematográficas generadas con **gpt-image-2** (OpenAI), character swap con **Gemini 2.5 Flash Image** para consistencia de rostro, tipografía aplicada con sharp + resvg, layout analizado slide por slide, voz de marca en tu idioma. Calidad de agencia boutique, sin agencia.
 
 Lo estoy liberando porque cuando empecé no tenía algo así y me hubiera ahorrado miles de dólares en ejecución. Si tú lo aprovechas y construyes algo top, eso me hace feliz.
 
 ---
+
+## Qué lo hace diferente
+
+- **Research antes de escribir** — Cuando el topic requiere datos (cifras, comparativas, casos), un agente investigador hace búsquedas web reales y produce `research-notes.md` con fuentes citadas. El brief jamás inventa una estadística.
+- **Scene seed compartido** — Un solo "mundo visual" (luz, paleta, prop recurrente, mood) se hereda en los 10 slides del carrusel. No son 10 imágenes inconexas: es una sesión de fotos.
+- **Narrativa continua** — Cada slide tiene un `narrativeBeat` (hook · setup · tension · insight · proof · cta) y se conecta con los vecinos. Se siente una historia, no una lista.
+- **Logos de marcas reales** — Cuando mencionas Duolingo, Apple o la marca que sea, el pipeline descarga su logo oficial de Clearbit y lo compone limpio sobre el slide.
+- **Character swap de 2 fases** — gpt-image-2 dirige la estética; Gemini pone tu cara con tus refs. Lo mejor de ambos modelos.
 
 ## Qué obtienes
 
@@ -27,7 +35,7 @@ Un solo comando (`npm run setup`) configura:
 - **Tu voz** — tono configurable según cómo escribes tú
 - **Tu personaje** (opcional) — 3-10 fotos tuyas y el pipeline te reconoce en cada imagen generada
 - **Tu cadencia** — horarios óptimos según tu zona horaria
-- **Tu API key** — usas tu propia cuenta de Google Gemini (gratis hasta cierto uso)
+- **Tus API keys** — OpenAI (gpt-image-2) para la composición + Google Gemini (character swap). Ambas se configuran en el wizard.
 
 Y luego, desde **Claude Code** pides en español normal:
 
@@ -43,11 +51,14 @@ Y 5-8 minutos después tienes:
 
 ## Consistencia de personaje (marca personal)
 
-Si eres marca personal, esta es la feature clave. Subes 3-10 fotos tuyas en diferentes ángulos, emociones y poses. El sistema analiza tu apariencia y las usa como referencia en cada generación.
+Si eres marca personal, esta es la feature clave. Subes 3-10 fotos tuyas en diferentes ángulos, emociones y poses. El sistema usa un **pipeline de 2 fases** para darte lo mejor de dos mundos:
 
-**Resultado**: apareces tú en los slides — el mismo rostro, la misma complexión, el mismo estilo — pero en escenas nuevas, poses nuevas, contextos nuevos. Consistencia visual que construye autoridad.
+1. **Fase A — Composición editorial** (gpt-image-2): genera la escena con calidad de diseñador gráfico — iluminación cinematográfica, mood premium, dirección de arte boutique. En esta fase un "placeholder" humano ocupa tu lugar.
+2. **Fase B — Character swap** (Gemini 2.5 Flash Image + tus refs): reemplaza la identidad por la tuya preservando composición, luz, pose y wardrobe. Gemini ya sabe que tú eres tú gracias a las refs.
 
-El modelo mantiene ~85% de fidelidad facial. No es un LoRA entrenado (eso requiere GPU y horas), pero para construir marca personal en redes es más que suficiente.
+**Resultado**: apareces tú en los slides — el mismo rostro, la misma complexión, el mismo estilo — pero en escenas cinematográficas que no se ven generadas por IA plana. Consistencia visual + impacto editorial.
+
+El pipeline apunta a ~95% de fidelidad facial (vs ~85% del enfoque single-pass). No es un LoRA entrenado (eso requiere GPU y horas), pero al desacoplar composición e identidad el resultado es mucho más limpio.
 
 ---
 
@@ -62,11 +73,16 @@ Tu pedido (lenguaje natural)
 └────────┬────────┘
          │
          ▼
-┌─────────────────┐
-│   Nanobanana    │  Gemini 2.5 Flash Image genera los PNGs base
-│ + tus refs (si  │  (con fotos del personaje si configuraste)
-│  eres personaje)│
-└────────┬────────┘
+┌─────────────────────┐
+│ Fase A — gpt-image-2│  OpenAI genera la composición editorial
+│ (quality=medium)    │  con placeholder humano genérico.
+└────────┬────────────┘  Aporta mood cinematográfico premium.
+         │
+         ▼
+┌─────────────────────┐
+│ Fase B — Gemini Swap│  (solo si el slide lleva personaje)
+│ + tus refs          │  Reemplaza identidad usando 2-4 refs tuyas,
+└────────┬────────────┘  preservando luz, pose y composición.
          │
          ▼
 ┌─────────────────┐
@@ -110,10 +126,16 @@ Cada etapa es un sub-agente Claude Code especializado. Tú solo pides contenido 
 
 - **Node.js 20+** ([nodejs.org](https://nodejs.org))
 - **Claude Code** ([claude.ai/code](https://claude.ai/code))
+- **OpenAI API key** + organización **verificada** ([platform.openai.com/api-keys](https://platform.openai.com/api-keys) · verifica la org en [settings/organization/general](https://platform.openai.com/settings/organization/general) — es obligatorio para usar gpt-image-2)
 - **Google Gemini API key** (gratis en [aistudio.google.com/apikey](https://aistudio.google.com/apikey))
 - **10-15 minutos** para el setup inicial
 
 Funciona en **Mac** y **Windows**.
+
+### Costo aproximado por carrusel (10 slides 4:5)
+- Fase A (gpt-image-2 medium): ~$0.41
+- Fase B (Gemini swap, ~60% de slides con personaje): ~$0.03
+- **Total: ~$0.44 por carrusel** — el equivalente a una hora de freelance te rinde para 100+ carruseles.
 
 ---
 
@@ -153,8 +175,8 @@ Mira los PNGs finales + los `brand.config.json` correspondientes para ver cómo 
 ## Lo que este repo NO es
 
 - **No es un SaaS.** Todo corre en tu máquina. Tu API key, tus archivos, tu control.
-- **No es plug-and-play sin IA.** Necesitas Claude Code y Gemini API. Si no los tienes, configúralos primero.
-- **No entrena un LoRA de tu cara.** Usa reference images en cada call (85% consistencia, no 100%). Si quieres fidelidad total, mira `docs/advanced/lora-training.md`.
+- **No es plug-and-play sin IA.** Necesitas Claude Code + OpenAI (org verificada) + Gemini API. Si no los tienes, configúralos primero.
+- **No entrena un LoRA de tu cara.** Usa reference images en la Fase B de swap (~95% consistencia con el pipeline de 2 fases, no 100%). Si quieres fidelidad total, mira `docs/advanced/lora-training.md`.
 - **No publica automáticamente.** Tú copias los PNGs y el caption y los subes a Instagram/LinkedIn. Eso es deliberado — publicar automático rompe autenticidad y Meta lo detecta.
 
 ---
@@ -188,7 +210,8 @@ No hay CI estricto ni tests por ahora — este es un regalo optimizado para que 
 Este proyecto no existiría sin:
 
 - **Anthropic** — por Claude y Claude Code
-- **Google** — por Gemini 2.5 Flash Image (Nanobanana)
+- **OpenAI** — por gpt-image-2 (dirección artística editorial)
+- **Google** — por Gemini 2.5 Flash Image (character swap)
 - **@rsms** y el equipo de Inter — tipografía open-source
 - **Vernon Adams** — por Anton
 - **Lovell Fuller** — por sharp

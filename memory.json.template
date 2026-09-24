@@ -1,0 +1,47 @@
+{
+  "version": "2.0",
+  "createdAt": "2026-05-07",
+  "lastUpdated": "2026-05-07",
+
+  "carouselHistory": [],
+
+  "successPatterns": [],
+
+  "failurePatterns": [],
+
+  "lineamientos": {
+    "versionControl": "2.0",
+    "lastUpdated": "2026-05-07",
+    "brandGuidelines": {
+      "palette": ["#0A0A0A", "#D4AF37", "#C9A84C", "#FFFFFF", "#B0B0B0", "#333333"],
+      "voice": "directo, cercano, sin tecnicismos — conversacional con autoridad",
+      "characterConsistency": null,
+      "preferredPilars": ["educativo", "casos", "estrategico"],
+      "forbiddenPatterns": [
+        "eyebrow tipo SLIDE X DE Y",
+        "copy genérico sin datos verificables",
+        "drift visual del personaje (caucásico/afro/europeo)",
+        "logos superpuestos con texto de overlay",
+        "scrim suave en vez de block opaco"
+      ]
+    },
+    "stylePreferences": {
+      "scrimOpacity": 0.88,
+      "logoBarHeight": 0.13,
+      "logoSize": 52,
+      "headlineMaxWords": 8,
+      "characterAppearance": "siempre de frente a cámara, gestos explicativos",
+      "colorSchemeRule": "dark → texto #FFFFFF | light → texto #1A1A1A",
+      "overlayPosition": "image-aware: leer PNG con Vision antes de posicionar"
+    }
+  },
+
+  "metrics": {
+    "totalCarousels": 0,
+    "byPilar": {},
+    "avgGenerationTime": null,
+    "totalTokensUsed": 0,
+    "characterConsistencyAvg": null,
+    "qualityScoreAvg": null
+  }
+}

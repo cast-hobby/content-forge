@@ -1,0 +1,129 @@
+{
+  "concept": "claude-vs-n8n",
+  "slug": "20260424-claude-vs-n8n",
+  "date": "2026-04-24",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 9,
+  "pillar": "debate",
+  "hook_line_1": "Claude mató a n8n. Hay un dato que lo respalda.",
+  "topic_summary": "Carrusel de debate honesto sobre cómo Claude Code está reemplazando casos de uso típicos de n8n en 2026 — con datos verificables y contrapunto donde n8n sigue ganando.",
+  "researchFile": "drafts/20260424-claude-vs-n8n-research-notes.md",
+  "dopamine_check": {
+    "pattern_interrupt": true,
+    "curiosity_gap": true,
+    "reframe": true,
+    "micro_payoff": true,
+    "closed_loop": true,
+    "cta_low_friction": true
+  },
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D97856",
+    "accentColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · terracotta-amber rim light · subtle fill from right",
+    "lightIntensity": "soft directional · deep crushed shadows · warm highlights · low ambient",
+    "recurringProp": "pixel-voxel 3D cubic Claude mascot in terracotta orange (#D97856) with blocky body, two black dot eyes, stubby cubic arms — same style as muz.li ctf-2 reference",
+    "mood": "editorial voxel-3D mascot · terracotta warm glow · dark boutique · cinematic pixel-art realism",
+    "cameraPreference": "35mm mid-shot · shallow DOF · subtle film grain · desaturated except gold and terracotta tones",
+    "wardrobeTone": "solid black polo · clean matte dark",
+    "backgroundFamily": "deep black #050505 wall with radial terracotta glow · clean negative space"
+  },
+  "signature": "Alexander Cast · @alexemprendee",
+  "caption_starter": "La verdad es que tengo Jarvis v2 corriendo en n8n y Content Forge en Claude Code, así que hablo con autoridad: Claude se comió el caso de uso central de n8n.",
+  "_design_principle": "ZERO TEXTO RASTERIZADO. Todos los slides usan textPayload:null. Los textos los aplica el compose-overlay vía SVG composite, garantizando legibilidad y consistencia tipográfica.",
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterPose": "standing 3/4 angle, mid-chest up visible, calm authoritative direct gaze, polo negro, brazos relajados",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS in the image. Pure cinematic portrait. Deep black #050505 background with subtle warm radial terracotta glow centered behind subject. CENTER-RIGHT (55% of frame): a person standing 3/4 angle, mid-chest up, wearing solid matte black polo, calm serious authoritative gaze into camera. LEFT 45% of frame: a LARGE GLOWING TERRACOTTA ASTERISK SYMBOL (#D97856) — neon-style sculptural sharp edges, the official Claude logo, floating in mid-air at chest height of the person. To the right edge of the frame, smaller scale: a 3D VOXEL PIXEL-ART CHARACTER MASCOT in matte terracotta (#D97856), blocky cubic body with two dot eyes, standing on the floor at the person's hip level. Camera-left warm rim light wraps the person's jaw and shoulder in gold-terracotta. Top 30% empty deep black for headline overlay. Subtle film grain. NO TEXT anywhere — pure photographic render. 4:5 vertical.",
+      "composition": "Claude asterisk left · person center-right · voxel mascot far-right small · top 30% empty · radial warm glow",
+      "textPayload": null
+    },
+    {
+      "id": "slide-02",
+      "filename": "slide-02-scorecard.png",
+      "narrativeBeat": "setup",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS in the image. Pure visual scoreboard composition on deep black #050505 background. CENTER: two stacked horizontal bars representing scores — top bar wider in warm terracotta (#D97856) glowing, bottom bar narrower in muted gray (#3D3D3C). Between the bars: a thin gold accent line (#D4AF37). Around the bars: 8 small abstract category icons (gear, magnifier, lightning bolt, gear-arrow, terminal cursor, eye, file-doc, link) in a horizontal row at top, all in gold #D4AF37 outline only. The 3D voxel pixel-art Claude mascot in terracotta stands at small scale on the floor at right edge, looking up at the bars proudly. Soft radial terracotta glow centered behind bars fading to deep black. Top 30% empty for headline. Editorial dark boutique style. NO TEXT, NO NUMBERS rasterized — pure abstract score visualization. 4:5 vertical.",
+      "composition": "Two stacked score bars · 8 category icons row top · mascot small right · top 30% empty · radial warm glow",
+      "textPayload": null
+    },
+    {
+      "id": "slide-03",
+      "filename": "slide-03-subagents.png",
+      "narrativeBeat": "tension",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS. Deep black #050505 background. CENTER: the 3D voxel pixel-art Claude mascot in terracotta (#D97856) standing actively, both blocky arms extended outward as if having just severed connections. Around the mascot: a chaotic tangle of glowing thin connection lines and small node circles in muted gray (#3D3D3C to white) — a visual metaphor for n8n's node graph being deactivated. Several lines visibly snapped near the mascot's hands with small terracotta sparks. Behind: warm radial terracotta glow. Top 30% empty deep black for headline. NO TEXT in image. 4:5 vertical.",
+      "composition": "Mascot center · disconnected node graph around · sparks · top 30% empty",
+      "textPayload": null
+    },
+    {
+      "id": "slide-04",
+      "filename": "slide-04-mcp.png",
+      "narrativeBeat": "tension",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS. Deep black #050505 background. CENTER: the 3D voxel pixel-art Claude mascot in terracotta (#D97856) standing tall. To its left side floats a stack of voxel-style hexagonal node tokens in muted gray, each with a tiny abstract icon — representing n8n nodes flowing TOWARD the mascot through a thin gold pipeline (#D4AF37). To its right side: a large glowing terracotta asterisk (Claude symbol) absorbing the flow. Visual metaphor: nodes are being channeled into Claude. Warm radial glow. Top 30% empty for headline. NO TEXT. 4:5 vertical.",
+      "composition": "Mascot center · n8n nodes stacked left flowing through gold pipe · Claude asterisk absorbing right · top 30% empty",
+      "textPayload": null
+    },
+    {
+      "id": "slide-05",
+      "filename": "slide-05-routines.png",
+      "narrativeBeat": "tension",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS. Deep black #050505 background. CENTER: the 3D voxel pixel-art Claude mascot in terracotta (#D97856) standing on a desk, beside it a CLOSED matte black voxel laptop with no glow. Above the mascot: a glowing terracotta voxel cloud floating, with thin gold connection lines pulsing from it down to the mascot. Around the cloud: 4 small voxel clock icons in gold orbiting at different angles, representing scheduled execution. The cloud and clocks glow warm — the laptop stays dark. Visual: workflow runs in cloud while machine sleeps. Top 30% empty. NO TEXT. 4:5 vertical.",
+      "composition": "Mascot+closed-dark-laptop center · floating glowing cloud above · 4 clock icons orbiting · top 30% empty",
+      "textPayload": null
+    },
+    {
+      "id": "slide-06",
+      "filename": "slide-06-hooks.png",
+      "narrativeBeat": "tension",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS. Deep black #050505 background. CENTER: the 3D voxel pixel-art Claude mascot in terracotta (#D97856) holding a glowing gold lightning bolt in one blocky arm. From a small voxel envelope icon at the left, a curved line flows toward the mascot — but instead of going straight through, it BENDS through a small glowing gold thinking-cloud near the mascot's head BEFORE continuing as multiple branching lines to different abstract icons (chat bubble, chart, document) on the right. Visual: trigger arrives → mascot reasons → branches into multiple actions. Warm glow. Top 30% empty. NO TEXT. 4:5 vertical.",
+      "composition": "Envelope left · mascot center with thinking-cloud · branching actions right · top 30% empty",
+      "textPayload": null
+    },
+    {
+      "id": "slide-07",
+      "filename": "slide-07-contrapunto.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS. Deep black #050505 background. SPLIT COMPOSITION: left half of frame shows a clean orderly grid of 9 small abstract integration icons (chat bubble, mail, calendar, table, chart, cloud, lock, etc.) in gold outline (#D4AF37) — representing n8n's pre-made integrations. Right half shows the 3D voxel Claude mascot in terracotta standing alone, looking thoughtfully toward the icon grid with one arm raised in respectful nod. A vertical thin gold dividing line between halves. Warm but balanced lighting. Top 30% empty. Editorial dark boutique. NO TEXT. 4:5 vertical.",
+      "composition": "Grid 3x3 of integration icons left half · mascot right half · vertical gold divider · top 30% empty",
+      "textPayload": null
+    },
+    {
+      "id": "slide-08",
+      "filename": "slide-08-quote.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS. Deep black #050505 background. Pure minimalist editorial. CENTER: a large elegant gold quotation mark glyph (#D4AF37) at top, occupying upper third. Below it: empty negative space (this is where the quote text overlay will go). At bottom-right corner: the 3D voxel pixel-art Claude mascot in terracotta sitting quietly with one arm to its chin, listening — as if the quote was just spoken. Subtle radial warm glow centered. NO TEXT. 4:5 vertical.",
+      "composition": "Large gold quote mark top · empty middle for overlay · mascot bottom-right small · radial glow",
+      "textPayload": null
+    },
+    {
+      "id": "slide-09",
+      "filename": "slide-09-cta.png",
+      "narrativeBeat": "cta",
+      "character": true,
+      "characterPose": "standing 3/4 angle, mid-chest up, calm warm slight smile, hands relaxed, polo negro, mirada cálida directa",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS in the image. Pure cinematic CTA portrait on deep black #050505 background. RIGHT 60% of frame: a person standing 3/4 angle, mid-chest up visible, wearing solid matte black polo, warm confident slight smile, direct calm gaze. LEFT 40% of frame: a 3D VOXEL PIXEL-ART CHARACTER MASCOT in warm terracotta orange (#D97856) — blocky cubic Minecraft-style body with dot eyes, stubby arms, standing tall on the floor at the person's hip-shoulder level — they are partners. Behind both: soft radial terracotta-amber warm glow fading to deep black at edges. Camera-left warm rim light. Top 30% and bottom 25% empty deep black for headline + signature overlay. Matte grain, cinematic dark luxury. NO TEXT — pure photographic/render image. 4:5 vertical.",
+      "composition": "Person right 60% · voxel mascot left 40% · radial warm glow · top 30% + bottom 25% empty",
+      "textPayload": null
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.2",
+    "generatedBy": "manual-clean-rebuild",
+    "generatedAt": "2026-04-24T19:20:00.000Z",
+    "brandConfig": "brand.config.json",
+    "handle": "@alexemprendee",
+    "brandName": "Alexander Cast",
+    "designPhilosophy": "Zero rasterized text — all text via overlay SVG composite to avoid gpt-image-2 drift"
+  }
+}

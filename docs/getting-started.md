@@ -9,7 +9,8 @@
 - **Node.js 20 o superior**
 - **Git**
 - **Claude Code** (app de escritorio)
-- **Google account** (para obtener la API key de Gemini, gratis)
+- **OpenAI account con organización verificada** — ver [platform.openai.com/settings/organization/general](https://platform.openai.com/settings/organization/general). Es requisito obligatorio de OpenAI para usar `gpt-image-2`. Sin la verificación el pipeline de Fase A no funciona.
+- **Google account** (para obtener la API key de Gemini, gratis — se usa en la Fase B de character swap)
 - **Tus assets de marca**: logo en PNG (2 variantes: dark y light), y si eres marca personal, 3-10 fotos tuyas
 
 ---
@@ -67,14 +68,23 @@ Te va a hacer 10 preguntas. Ten listas:
 - Tu handle de Instagram
 - 3 hex codes de tus colores (primario, oscuro, claro)
 - Paths a tus 2 variantes del logo (colócalos en `brand-assets/`)
-- Tu API key de Gemini (ver paso 7)
+- Tus 2 API keys (ver paso 7)
 
-### 7. Obtén tu API key de Gemini
+### 7. Obtén tus API keys
+
+**OpenAI** (Fase A — composición editorial con gpt-image-2):
+
+1. Ve a **https://platform.openai.com/api-keys** (login o crea cuenta)
+2. Verifica tu organización en **https://platform.openai.com/settings/organization/general** (obligatorio para gpt-image-2)
+3. Click **"Create new secret key"** y copia (empieza con `sk-...`)
+4. Añade saldo si tu cuenta está a cero. ~$5 te rinden para ~10 carruseles completos.
+
+**Gemini** (Fase B — character swap, gratis):
 
 1. Ve a **https://aistudio.google.com/apikey** (login con Google)
 2. Click **"Create API key"**
 3. Copia la key completa (empieza con `AIzaSy...` y tiene 39 chars)
-4. Pégala cuando el wizard te la pida
+4. Pega ambas cuando el wizard te las pida
 
 ### 8. (Opcional) Sube fotos del personaje
 
@@ -144,12 +154,18 @@ npm run setup
 
 Ten listas las respuestas (ver paso 6 de Mac arriba).
 
-### 7. Obtén tu API key de Gemini
+### 7. Obtén tus API keys
 
-1. Abre navegador → **https://aistudio.google.com/apikey** (login con Google)
-2. Click **"Create API key"**
-3. Copia la key completa
-4. Pégala cuando el wizard te la pida
+**OpenAI** (Fase A):
+1. Abre **https://platform.openai.com/api-keys** y crea/loguéate.
+2. Verifica tu organización en **https://platform.openai.com/settings/organization/general** (obligatorio para gpt-image-2).
+3. Click **"Create new secret key"** → copia (empieza con `sk-...`).
+4. Añade saldo si aplica.
+
+**Gemini** (Fase B, gratis):
+1. Abre **https://aistudio.google.com/apikey** (login con Google).
+2. Click **"Create API key"** → copia.
+3. Pega ambas cuando el wizard te las pida.
 
 ### 8. (Opcional) Sube fotos del personaje
 
@@ -172,7 +188,7 @@ Después del wizard deberías tener:
 ```
 content-forge/
 ├── brand.config.json          ← TU configuración
-├── .env.local                 ← tu API key
+├── .env.local                 ← tus API keys (OPENAI + GEMINI)
 ├── brand-assets/
 │   ├── logo-dark.png          ← tu logo oscuro
 │   ├── logo-light.png         ← tu logo claro

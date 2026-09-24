@@ -1,0 +1,30 @@
+{
+  "_comment": "Brief mínimo de smoke test para validar el pipeline gpt-image-2 + Gemini swap. Úsalo tras npm run setup + verificar org OpenAI.",
+  "concept": "smoke-test-migration",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "images": [
+    {
+      "id": "slide-01-opening",
+      "filename": "slide-01.png",
+      "concept": "Flat lay on a warm light background: an open leather notebook, a matte ceramic espresso cup, a brass pen and a small plant. Editorial still life, no human presence.",
+      "composition": "Top-down view, intentional negative space on the right third for future overlay.",
+      "character": false
+    },
+    {
+      "id": "slide-02-founder-portrait",
+      "filename": "slide-02.png",
+      "concept": "A founder speaking at a creative studio, three-quarter view, holding a matte phone while gesturing to explain an idea.",
+      "composition": "Mid-waist crop, shallow depth of field, warm directional side light from camera-left, brand accent color visible on the wall behind.",
+      "character": true,
+      "characterHint": "Relaxed confidence, slight three-quarter turn, left hand holding a phone on a tripod, right hand gesturing to the unseen audience."
+    },
+    {
+      "id": "slide-03-closing",
+      "filename": "slide-03.png",
+      "concept": "Minimalist architectural geometry: concrete column and soft dawn light spilling across a textured wall.",
+      "composition": "Vertical composition with strong leading line, generous negative space top-center.",
+      "character": false
+    }
+  ]
+}

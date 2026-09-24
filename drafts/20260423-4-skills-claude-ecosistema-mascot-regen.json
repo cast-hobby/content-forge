@@ -1,0 +1,137 @@
+{
+  "concept": "4-skills-claude-ecosistema",
+  "slug": "4-skills-claude-ecosistema",
+  "date": "20260423",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 4,
+  "pillar": "educativo",
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D97856",
+    "accentColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · terracotta-amber rim light · subtle fill from right",
+    "mood": "editorial voxel-3D mascot · terracotta warm glow · dark boutique · cinematic pixel-art realism",
+    "recurringProp": "pixel-voxel 3D cubic character mascot in terracotta orange (#d97856), blocky Minecraft-like body with two dot eyes and small cubic limbs, matte finish, 3D depth with soft shadows",
+    "backgroundFamily": "deep black #050505 wall with radial terracotta glow behind mascot, clean negative space"
+  },
+  "images": [
+    {
+      "id": "slide-03",
+      "filename": "slide-03-skill-01.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "Dark editorial scene on deep black #050505 background. CENTERED: a 3D voxel pixel-art character mascot in warm terracotta orange color (#d97856) — blocky cubic body like a Minecraft-style creature with two small rectangular black eyes, short cubic legs and small rectangular arms, matte clay-like finish with subtle 3D shading. The mascot is ACTIVELY TYPING on a small voxel laptop in front of it, the laptop screen glows amber-terracotta showing abstract lines of code/JSON, small terracotta particles float around the mascot suggesting data being processed. Behind the mascot: a radial warm terracotta-amber glow halo that fades to black at the edges. Around the mascot scene: 3-4 small voxel documents floating in orbit, each a pixelated paper with faint lines. Bottom-right corner: a small tabletop plane suggesting a desk. Top 30% of frame completely clear deep black for headline. Subtle film grain, cinematic voxel-3D render, editorial dark luxury vibe. Headline '01 BRIEF ARCHITECT' will render at top-left in matte gold with body text below. 4:5 vertical composition.",
+      "composition": "Mascot centered, typing on mini laptop · radial terracotta glow halo · 3-4 voxel documents orbit · top 30% empty for headline · bottom clear for body overlay",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "01 BRIEF ARCHITECT",
+            "style": "display-large",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 1
+          }
+        },
+        "renderInOverlay": {
+          "handle": false,
+          "logo": false,
+          "microCopy": null,
+          "elements": []
+        }
+      }
+    },
+    {
+      "id": "slide-04",
+      "filename": "slide-04-skill-02.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "Dark editorial scene on deep black #050505 background. CENTERED: the same 3D voxel pixel-art character mascot in terracotta orange (#d97856) — blocky cubic Minecraft-style body with two dot eyes, matte clay finish. The mascot is HOLDING A DRAFTING RULER AND PLACING IT on a floating semi-transparent voxel grid panel in front of it, the grid panel shows a pixel-art layout design with placeholder blocks and golden alignment lines. Small terracotta and gold pixel markers indicate alignment points on the grid. Behind the mascot: radial terracotta glow halo fading to black. A faint voxel picture frame floats near the grid suggesting the image being analyzed. Bottom: voxel desk suggestion. Top 30% clear deep black for headline '02 LAYOUT ARCHITECT'. Subtle film grain, cinematic voxel-3D render, matte editorial finish. 4:5 vertical composition.",
+      "composition": "Mascot holding ruler on floating grid panel · terracotta glow halo · voxel picture frame nearby · top 30% empty",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "02 LAYOUT ARCHITECT",
+            "style": "display-large",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 1
+          }
+        },
+        "renderInOverlay": {
+          "handle": false,
+          "logo": false,
+          "microCopy": null,
+          "elements": []
+        }
+      }
+    },
+    {
+      "id": "slide-05",
+      "filename": "slide-05-skill-03.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "Dark editorial scene on deep black #050505 background. CENTERED: the same 3D voxel pixel-art character mascot in terracotta orange (#d97856). The mascot is HOLDING A LARGE VOXEL MAGNIFYING GLASS pointed at a small floating voxel slide thumbnail, INSPECTING IT. Around the mascot in orbit: 4 voxel thumbnail cards in a rough arc, each with a small status glyph beside it — a gold checkmark, a gold warning triangle, a gold X, another gold checkmark. Behind the mascot: radial terracotta glow halo fading to black. Bottom: voxel desk suggestion. Top 30% clear deep black for headline '03 VISUAL QA'. Subtle film grain, cinematic voxel-3D render, matte editorial. 4:5 vertical composition.",
+      "composition": "Mascot with magnifying glass inspecting a thumbnail · 4 voxel status cards in arc · terracotta halo · top 30% empty",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "03 VISUAL QA",
+            "style": "display-large",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 1
+          }
+        },
+        "renderInOverlay": {
+          "handle": false,
+          "logo": false,
+          "microCopy": null,
+          "elements": []
+        }
+      }
+    },
+    {
+      "id": "slide-06",
+      "filename": "slide-06-skill-04.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "Dark editorial scene on deep black #050505 background. CENTERED-LEFT: the same 3D voxel pixel-art character mascot in terracotta orange (#d97856). The mascot is STANDING BETWEEN TWO FLOATING VOXEL PANELS — on its LEFT a voxel panel showing a generic colorful carousel slide (abstract pixel-art representing a viral post), on its RIGHT a voxel panel showing a stylized dark editorial slide with gold accents (the reinterpreted version). The mascot holds a small terracotta connector/arrow pointing from left to right panel. A soft gold arrow glyph floats in the center between the two panels. Behind the mascot: radial terracotta glow halo fading to black. Top 30% clear deep black for headline '04 CONTENT CLONE ANALYZER'. Subtle film grain, cinematic voxel-3D render. 4:5 vertical composition.",
+      "composition": "Mascot between 2 voxel panels · gold connector arrow · original-to-reinterpreted flow · top 30% empty",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "04 CONTENT CLONE ANALYZER",
+            "style": "display-large",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "handle": false,
+          "logo": false,
+          "microCopy": null,
+          "elements": []
+        }
+      }
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.2",
+    "generatedBy": "manual-regen-mascot",
+    "generatedAt": "2026-04-24T14:30:00.000Z",
+    "brandConfig": "brand.config.json",
+    "handle": "@alexemprendee",
+    "brandName": "Alexander Cast",
+    "regenReason": "User feedback: usar el logo oficial de Claude (asterisk terracotta) + generar un mascot voxel 3D del personaje Claude haciendo la acción de cada skill, estilo referencia muz.li ctf-2.png."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "concept": "claude-vs-n8n",
+  "slug": "claude-vs-n8n",
+  "date": "20260424",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 2,
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D97856",
+    "accentColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · terracotta-amber rim light · subtle fill from right",
+    "mood": "editorial cinematic · hero portrait with voxel mascot companion · dark boutique · dramatic warm glow",
+    "recurringProp": "pixel-voxel 3D cubic Claude mascot in terracotta orange (#D97856) with blocky body and dot eyes",
+    "backgroundFamily": "deep black #050505 with radial terracotta glow"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterPose": "standing 3/4 angle center-right, mid-chest up visible, polo negro, calm serious authoritative direct gaze, arms relaxed",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS in the image. Pure cinematic editorial portrait. Deep black #050505 background with subtle radial warm terracotta glow centered. LEFT 40% of frame: a LARGE GLOWING TERRACOTTA-ORANGE (#D97856) ANTHROPIC CLAUDE ASTERISK — a multi-pointed starburst symbol with EIGHT TO TWELVE ASYMMETRIC ELONGATED SPOKES radiating from a central point, each spoke is a soft-edged terracotta color segment, like the OFFICIAL ANTHROPIC CLAUDE LOGO (not a 5-point star, NOT a traditional pentagram star, NOT a snowflake — an organic asymmetric burst with uneven spokes like the Anthropic brand mark). The asterisk glows like warm neon, floating at chest height of the person, scale ~30% of frame height. CENTER-RIGHT (50% of frame): a person standing 3/4 left angle, mid-chest up visible, wearing solid matte black polo, calm serious authoritative direct gaze into camera, bare head NO HAT NO CAP. BOTTOM-RIGHT CORNER of frame: a 3D VOXEL PIXEL-ART CHARACTER MASCOT in warm terracotta orange (#D97856) — blocky cubic Minecraft-style body with two rectangular black dot eyes, stubby cubic arms, standing on the floor near the person's feet, scale ~20% of frame height (MORE PROMINENT than a tiny decoration, visible and clear). Camera-left warm rim light wraps the person's jaw and shoulder in gold-terracotta. Top 30% empty deep black for headline overlay. Subtle film grain. NO TEXT anywhere — pure photographic render. 4:5 vertical.",
+      "composition": "Anthropic asterisk left 40% · person center-right · voxel mascot bottom-right prominent · top 30% empty · radial warm glow",
+      "textPayload": null
+    },
+    {
+      "id": "slide-09",
+      "filename": "slide-09-cta.png",
+      "narrativeBeat": "cta",
+      "character": true,
+      "characterPose": "standing 3/4 angle right 60%, mid-chest up visible, polo negro SIN GORRA NI SOMBRERO, warm confident slight smile, direct calm gaze, hands relaxed",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS, NO HAT, NO CAP, NO BEANIE, NO HEAD COVERING OF ANY KIND. BARE HEAD. Pure cinematic CTA portrait. Deep black #050505 background with soft radial terracotta-amber warm glow. RIGHT 55% of frame: a person standing 3/4 angle, mid-chest up visible, wearing solid matte black polo, BARE HEAD with visible hair (NO hat, NO cap), warm confident slight smile, direct calm gaze into camera. LEFT 45% of frame: a 3D VOXEL PIXEL-ART CHARACTER MASCOT in warm terracotta orange (#D97856) — blocky cubic Minecraft-style body with two rectangular black dot eyes, stubby cubic arms, standing tall on the floor at the person's hip-shoulder level (they are partners). Camera-left warm rim light wraps the person's jaw and shoulder in gold-terracotta. Top 25% AND bottom 25% empty deep black for overlay (headline top, signature bottom). Matte grain, cinematic dark luxury. NO TEXT, NO HAT, NO CAP. 4:5 vertical.",
+      "composition": "Person right 55% bare head · voxel mascot left 45% · top 25% empty · bottom 25% empty · radial warm glow",
+      "textPayload": null
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.2",
+    "generatedBy": "manual-regen-01-09-fix",
+    "generatedAt": "2026-04-24T19:45:00.000Z",
+    "regenReason": "slide-01 salió con estrella 5-puntas en vez de asterisk Anthropic + mascota muy pequeña · slide-09 salió con gorra tipo LA (viola regla identidad rigurosa)."
+  }
+}

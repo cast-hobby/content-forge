@@ -1,0 +1,45 @@
+{
+  "concept": "claude-vs-n8n",
+  "slug": "claude-vs-n8n",
+  "date": "20260424",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 2,
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D97856",
+    "accentColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional",
+    "mood": "editorial cinematic · dark boutique",
+    "recurringProp": "pixel-voxel 3D cubic Claude mascot in terracotta orange (#D97856)",
+    "backgroundFamily": "deep black #050505"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterPose": "standing 3/4 angle center, mid-chest up visible, polo negro, calm serious authoritative direct gaze, arms relaxed at sides",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS, NO STARS, NO LOGOS, NO SYMBOLS. Pure cinematic editorial portrait. Deep black #050505 background with subtle radial warm terracotta glow centered behind subject. CENTER (occupying 55% of frame): a person standing 3/4 left angle, mid-chest up visible, wearing solid matte black polo, bare head no hat, calm serious authoritative direct gaze into camera. LEFT BOTTOM CORNER of frame (occupying 25% of frame height): a 3D VOXEL PIXEL-ART CHARACTER MASCOT in warm terracotta orange (#D97856) — blocky cubic Minecraft-style body with two rectangular black dot eyes, stubby cubic arms, standing on the floor at the person's hip level, VISIBLE AND PROMINENT. Camera-left warm rim light wraps the person's jaw and shoulder in gold-terracotta. Entire LEFT-CENTER area of frame (approximately x 0-0.45, y 0.15-0.60) is COMPLETELY EMPTY deep black negative space — nothing floating there, no objects, no decorative elements, no stars, no light shapes, pure dark. Top 25% empty. Subtle film grain. NO TEXT, NO STAR, NO LOGO, NO SYMBOL, NO DECORATIVE SHAPE anywhere in the image. 4:5 vertical.",
+      "composition": "Person center 55% · voxel mascot bottom-left prominent · LEFT-CENTER zone EMPTY (for composite) · top 25% empty · radial warm glow behind person",
+      "textPayload": null
+    },
+    {
+      "id": "slide-09",
+      "filename": "slide-09-cta.png",
+      "narrativeBeat": "cta",
+      "character": true,
+      "characterPose": "standing 3/4 angle right of center, mid-chest up, polo negro, HAIR VISIBLE NO HAT, warm confident slight smile, direct gaze",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS. CRITICAL: ABSOLUTELY NO HAT, NO CAP, NO BEANIE, NO HEADWEAR OF ANY KIND. The person has FULLY EXPOSED HAIR ON TOP OF HIS HEAD — short dark brown hair styled back, bare crown visible, NOTHING covering the head. Pure cinematic CTA portrait. Deep black #050505 background with soft radial terracotta-amber warm glow. RIGHT 55% of frame: a person standing 3/4 angle, mid-chest up visible, wearing solid matte black polo, SHORT DARK HAIR VISIBLE ON HEAD (NO hat, NO cap, NO beanie — bareheaded with hair showing), warm confident slight smile, direct calm gaze into camera. LEFT 45% of frame: a 3D VOXEL PIXEL-ART CHARACTER MASCOT in warm terracotta orange (#D97856) — blocky cubic Minecraft-style body with two rectangular black dot eyes, stubby cubic arms, standing tall on the floor at the person's hip-shoulder level. Camera-left warm rim light. Top 25% AND bottom 25% empty deep black. Matte grain. NO HAT ABSOLUTELY NONE. Hair on head clearly visible. 4:5 vertical.",
+      "composition": "Person right 55% HAIR VISIBLE NO HAT · voxel mascot left 45% · top 25% bottom 25% empty",
+      "textPayload": null
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.2",
+    "generatedBy": "manual-regen-v2",
+    "generatedAt": "2026-04-24T19:55:00.000Z",
+    "regenReason": "slide-01: quitar asterisk del prompt (gpt-image-2 hace estrella pentagram), asterisk oficial se composita en post via brand-assets/tools/claude-asterisk-big-terracotta.png. slide-09: prompt más agresivo NO HAT con énfasis en hair visible."
+  }
+}

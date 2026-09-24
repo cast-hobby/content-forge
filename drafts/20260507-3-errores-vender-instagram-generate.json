@@ -1,0 +1,170 @@
+{
+  "concept": "3-errores-vender-instagram",
+  "slug": "20260507-3-errores-vender-instagram",
+  "date": "2026-05-07",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 10,
+  "pillar": "educativo",
+  "hook_line_1": "3 ERRORES QUE CIERRAN TUS VENTAS EN INSTAGRAM",
+  "sceneSeed": {
+    "dominantColor": "#0A0A0A",
+    "secondaryColor": "#D4AF37",
+    "accentColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · golden rim light #D4AF37 wrapping jaw and shoulder · subtle fill from right",
+    "lightIntensity": "soft 3-point cinema lighting · crushed deep shadows · warm golden highlights · low ambient",
+    "recurringProp": "ceramic mug with dark coffee on a minimal matte-black surface",
+    "mood": "profesional-accesible · editorial cinematográfico · boutique studio moderno minimalista",
+    "cameraPreference": "35mm mid-shot · shallow depth of field · subtle film grain · desaturated except gold tones",
+    "wardrobeTone": "solid black polo or dark navy tee · clean matte dark · cadena plateada visible",
+    "backgroundFamily": "deep black #0A0A0A wall with radial warm gold glow · textured concrete or matte dark surface"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterPose": "frontal mid-shot, direct gaze at camera, right hand index finger pointing up, serious-accessible expression, mid-chest up visible, relaxed confident posture",
+      "characterHint": "Alexander, hombre latinoamericano 30s, tez morena clara, pelo negro corto con canas en sienes, barba corta bien recortada, cadena plateada, polo negro matte, de frente a cámara, dedo índice derecho apuntando hacia arriba, expresión seria y directa pero accesible, plano medio hasta el pecho",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized in the image. Pure cinematic portrait. Deep black #0A0A0A background with radial warm golden glow #D4AF37 centered behind subject. CENTER: a person — polo negro sólido matte — plano medio hasta el pecho, de frente a cámara, dedo índice de la mano derecha apuntando hacia arriba, expresión seria y directa pero accesible. Camera-left warm 3-point cinema lighting, golden rim light #D4AF37 envolviendo mandíbula y hombro izquierdo. A su lado izquierdo a nivel cadera, pequeño: la taza de café cerámica sobre superficie matte negra. Top 40% empty deep black for headline overlay. Shallow depth of field, subtle film grain, -15% saturation except gold tones. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "Person center, gold glow behind, coffee mug hip-level left, top 40% empty black for headline",
+      "textPayload": null,
+      "continuity": {
+        "connectsToNext": "mismo estudio, misma luz, cámara se aleja levemente para revelar más contexto",
+        "narrativeLink": "establece los 3 errores que el carrusel va a desarrollar"
+      }
+    },
+    {
+      "id": "slide-02",
+      "filename": "slide-02-intro.png",
+      "narrativeBeat": "setup",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized in the image. Pure minimalist flat-lay composition. Deep black #0A0A0A background. CENTER: a matte black smartphone face-up on a dark textured surface, screen showing a blurred warm abstract glow (no legible UI), beside it the recurring ceramic coffee mug with dark espresso and subtle steam. To the right: a small stack of two matte-black notebooks with a thin gold bookmark ribbon #D4AF37. Soft radial warm golden glow #D4AF37 emanating from center fading to absolute black at edges. Camera top-down at 45° slight angle. Shallow depth of field, film grain, ultra clean negative space. Top 35% empty deep black for headline overlay. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "Top-down flat-lay: smartphone center, coffee mug beside, notebooks right, top 35% empty black",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "misma paleta #0A0A0A, transición de retrato humano a objeto editorial",
+        "connectsToNext": "introduce el primer error, mismo mood minimalista",
+        "narrativeLink": "reframe: no es Instagram, es el método"
+      }
+    },
+    {
+      "id": "slide-03",
+      "filename": "slide-03-error-01.png",
+      "narrativeBeat": "tension",
+      "character": true,
+      "characterPose": "3/4 angle, mid-waist up, both hands open in front of chest explaining actively, slightly furrowed brow, serious warning expression",
+      "characterHint": "Alexander, hombre latinoamericano 30s, tez morena clara, polo negro, cadena plateada, barba corta con canas, ángulo 3/4, ambas manos abiertas al frente explicando el punto, ceño levemente fruncido mostrando que esto es un error, expresión seria de advertencia tranquila",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Cinematic portrait. Deep black #0A0A0A background, radial golden glow #D4AF37 behind subject. A person — polo negro matte — ángulo 3/4, plano medio hasta la cintura, ambas manos abiertas frente al pecho explicando activamente, ceño levemente fruncido con expresión seria de advertencia tranquila. Camera-left warm 3-point cinema lighting, golden rim light #D4AF37 en mandíbula y hombro. En el borde inferior del frame, parcialmente visible: la taza cerámica de café en superficie negra. Top 35% empty deep black for overlay. Shallow DOF, film grain, -15% saturation except gold. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "Person 3/4 center explaining, both hands open, coffee mug partial bottom, top 35% empty",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "misma luz y paleta, personaje vuelve a cuadro para explicar el error",
+        "connectsToNext": "slide siguiente resuelve exactamente lo que este presenta como problema",
+        "narrativeLink": "tensión: el error más común del 80% de emprendedores en IG"
+      }
+    },
+    {
+      "id": "slide-04",
+      "filename": "slide-04-fix-01.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Minimalist editorial composition. Deep black #0A0A0A background. CENTER: a single open matte-black notebook with two abstract bullet-point lines drawn in gold ink #D4AF37 — just abstract scribble lines, no legible words. Next to it, a thin gold pen #D4AF37 resting diagonally. In the upper-right corner, very small: the ceramic coffee mug. Radial warm golden glow centered on the notebook fading to deep black. Camera at 45° angle, shallow depth of field, film grain. Top 35% empty deep black for headline overlay. Mood: focused, intentional, editorial. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "Open notebook center, gold abstract lines, gold pen diagonal, coffee mug small upper-right, top 35% empty",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "resuelve directamente el error presentado en slide-03",
+        "connectsToNext": "introduce el segundo error",
+        "narrativeLink": "insight: el copy específico genera más conversión"
+      }
+    },
+    {
+      "id": "slide-05",
+      "filename": "slide-05-error-02.png",
+      "narrativeBeat": "tension",
+      "character": true,
+      "characterPose": "3/4 angle, mid-chest up, left hand extended open toward camera emphasizing the point, direct gaze, calm serious warning expression",
+      "characterHint": "Alexander, hombre latinoamericano 30s, tez morena clara, polo negro, cadena plateada, ángulo 3/4, mano izquierda abierta extendida hacia la cámara como haciendo énfasis, expresión de advertencia calmada y directa, mirada a cámara",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Cinematic portrait. Deep black #0A0A0A background, radial warm golden glow #D4AF37 behind subject. A person — polo negro matte — ángulo 3/4, plano medio hasta pecho, mano izquierda extendida abierta hacia la cámara enfatizando el punto, mirada directa a cámara, expresión tranquila pero seria de advertencia. Camera-left warm 3-point cinema lighting, golden rim light #D4AF37 envolviendo mandíbula derecha y hombro. En el ángulo inferior del frame: la taza cerámica de café parcialmente visible. Top 35% empty deep black for overlay. Shallow DOF, film grain. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "Person 3/4 left-hand extended toward camera, warning pose, coffee mug partial bottom corner, top 35% empty",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "personaje reaparece con nueva tensión, continuidad de paleta y luz",
+        "connectsToNext": "slide siguiente da el fix práctico",
+        "narrativeLink": "segundo golpe de tensión: seguidores sin cualificación = esfuerzo sin retorno"
+      }
+    },
+    {
+      "id": "slide-06",
+      "filename": "slide-06-fix-02.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Abstract editorial visual. Deep black #0A0A0A background. CENTER: three abstract vertical rectangular blocks of different heights in muted gray #3D3D3C — the tallest one on the right is highlighted with a warm golden glow #D4AF37 and a thin gold border. Small abstract oval-head silhouettes in varying sizes scattered around — most in muted gray, one highlighted in gold next to the tallest block. Radial golden glow centered behind the tallest block. Small ceramic coffee mug visible at bottom-left edge. Top 35% empty deep black for overlay. Shallow DOF, film grain, editorial minimalist. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "3 abstract blocks different heights, tallest glowing gold right, oval silhouettes, coffee mug bottom-left, top 35% empty",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "resuelve el problema de audiencia no cualificada",
+        "connectsToNext": "introduce el tercer y último error",
+        "narrativeLink": "insight: el contenido específico actúa como filtro natural"
+      }
+    },
+    {
+      "id": "slide-07",
+      "filename": "slide-07-error-03.png",
+      "narrativeBeat": "tension",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Conceptual editorial composition. Deep black #0A0A0A background. CENTER: a closed matte-black door with a thin golden keyhole #D4AF37 that emits a narrow beam of warm golden light through the crack. In front of the door, on the floor: a small abstract shopping bag silhouette in muted gray. The warm golden glow comes exclusively from the keyhole crack. Mood: metaphor of trust being the key to sales. Small ceramic coffee mug at lower right edge, barely visible. Top 35% empty deep black for overlay. Shallow DOF, film grain, cinematic. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "Closed black door center, golden keyhole glow, abstract bag silhouette at door, coffee mug barely visible bottom-right, top 35% empty",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "continuidad de paleta y recurringProp, sin personaje",
+        "connectsToNext": "personaje reaparece en slide-08 para dar el sistema concreto",
+        "narrativeLink": "tercer golpe de tensión: la venta prematura quema la relación"
+      }
+    },
+    {
+      "id": "slide-08",
+      "filename": "slide-08-fix-03.png",
+      "narrativeBeat": "insight",
+      "character": true,
+      "characterPose": "frontal mid-shot, mid-waist up, right hand index finger pointing up, genuine slight smile, calm confident authority expression — brightest slide of the carousel",
+      "characterHint": "Alexander, hombre latinoamericano 30s, tez morena clara, polo negro, cadena plateada, barba corta con canas, frontal a cámara, plano medio, mano derecha con dedo índice apuntando hacia arriba como explicando el sistema, expresión de autoridad calmada y confiada, leve sonrisa genuina",
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Cinematic authoritative portrait. Deep black #0A0A0A background with the STRONGEST golden radial glow #D4AF37 of the entire carousel — this is the key insight slide, maximum luminosity. CENTER: a person — polo negro matte — frontal a cámara, plano medio hasta cintura, dedo índice de la mano derecha apuntando hacia arriba, leve sonrisa genuina y expresión de autoridad tranquila y confiada. Camera-left warm 3-point cinema lighting, golden rim light #D4AF37 very pronounced envolviendo mandíbula y hombro izquierdo. La taza cerámica de café visible en la superficie matte negra a su derecha, nivel cadera. Top 30% empty deep black for headline overlay. Shallow DOF, film grain, -15% saturation except gold tones. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "Person frontal center, strongest gold glow of carousel, finger pointing up, coffee mug right hip-level, top 30% empty",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "personaje reaparece para cerrar el tercer error con la solución más importante",
+        "connectsToNext": "slide siguiente presenta el caso concreto que valida el sistema",
+        "narrativeLink": "insight culminante: la cadencia educar-mostrar-ofrecer como sistema repetible"
+      }
+    },
+    {
+      "id": "slide-09",
+      "filename": "slide-09-prueba.png",
+      "narrativeBeat": "proof",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Editorial data visualization composition. Deep black #0A0A0A background. CENTER: three abstract upward bar charts in a row — left bar muted gray #3D3D3C short, center bar medium height in warm gold #D4AF37 with glow, right bar the tallest also in gold #D4AF37 with the strongest warm radial glow behind it. Above the bars: three abstract Instagram-style rounded square frames in muted gold outline, representing content posts. The golden glow intensifies left-to-right showing progression. Small ceramic coffee mug at bottom-left edge of frame. Top 35% empty deep black for overlay. Film grain, shallow DOF, editorial minimalist dark. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "3 ascending bar charts gray-to-gold, 3 IG square frames above, coffee mug bottom-left, top 35% empty",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "consolida los 3 fixes con validación visual de progresión",
+        "connectsToNext": "prepara el CTA",
+        "narrativeLink": "proof: el sistema funciona, la evidencia es el patrón consistente"
+      }
+    },
+    {
+      "id": "slide-10",
+      "filename": "slide-10-cta.png",
+      "narrativeBeat": "cta",
+      "character": false,
+      "concept": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Minimal elegant closing composition. Deep black #0A0A0A background. CENTER: the ceramic coffee mug — the recurring prop of the carousel — now PROMINENTLY FEATURED ALONE as the sole subject, with soft steam rising, surrounded by the warmest golden radial glow #D4AF37 of the series, as if under a spotlight. The mug sits on a matte-black surface with a subtle reflection. Behind and slightly to the upper right: a thin gold horizontal line #D4AF37 acting as a visual separator. The composition is intentionally simple, clean, quiet — an invitation to continue the conversation. Top 35% empty deep black for CTA overlay. Camera front-facing at slight 15° tilt down, macro with shallow DOF, warm film grain. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "composition": "Coffee mug alone center as hero, warmest gold spotlight glow, steam rising, thin gold line upper-right, top 35% empty",
+      "textPayload": null,
+      "continuity": {
+        "connectsToPrevious": "el recurringProp protagoniza el cierre — loop visual cerrado con el setup",
+        "narrativeLink": "closed loop: la taza que estuvo presente en todo el carrusel cierra la historia"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "concept": "4-skills-claude-ecosistema",
+  "slug": "4-skills-claude-ecosistema",
+  "date": "20260423",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 2,
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · golden rim light at #D4AF37 · subtle fill from right",
+    "recurringProp": "matte black laptop with glowing screen on dark desk surface",
+    "mood": "developer boutique editorial · quiet authority · late night build session",
+    "backgroundFamily": "deep black textured surface · dark concrete or matte desk · near-zero ambient"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterHint": "MANDATORY ETHNICITY: Colombian Latin American MESTIZO man, 38 years old. SKIN TONE IS THE MOST CRITICAL FEATURE: warm olive-brown skin with visible bronze/tan undertones — the complexion of a mestizo Colombian, clearly DARKER than a caucasian European person. NOT pale, NOT ivory, NOT pinkish. Think Sofia Vergara's ethnicity or Maluma's skin tone as reference. HAIR PATTERN — this is also critical: dark brown/near-black hair on TOP of head, with salt-and-pepper SILVER-GRAY streaks concentrated ONLY at the TEMPLES (the sides above the ears) — NOT gray all over, NOT uniformly gray. Dark on crown + gray at temples = the correct pattern. BEARD: short trimmed full beard, dark with visible gray-white streaks mixed in (not fully gray, not fully dark). NECKLACE: thick silver figaro chain RESTING VISIBLY over the collar of a solid black polo — the chain must be clearly visible in frame, not hidden under clothing. BUILD: stocky robust build, broad shoulders, NOT slim, NOT lean. No hat. No cap. Bare head. Refs [1, 5, 6, 7].",
+      "concept": "ZERO-TOLERANCE IDENTITY PORTRAIT of a Colombian MESTIZO man (warm olive-brown skin — clearly not caucasian). 38 years old. Dark brown/near-black hair on top of head with visible salt-and-pepper silver-gray streaks ONLY at the temples (above the ears). Short trimmed full beard with visible gray-white streaks mixed through the dark base. Thick silver figaro chain visibly resting over collar of black polo shirt. Stocky robust build with broad shoulders. No hat. Bare head. Positioned in the LOWER-RIGHT quadrant: subject occupies bottom 55% of frame and the RIGHT 60% of frame. TOP 45% OF FRAME MUST BE COMPLETELY EMPTY deep black #050505 negative space — no subject, no props, no light. He holds a small glowing matte gold square icon in his open right palm at mid-chest level, a soft #D4AF37 golden glow emanates from the icon. Background: deep black textured wall with subtle dark concrete texture. Camera-left warm directional rim light at #D4AF37 wraps his left jaw and left shoulder with sharp definition. Right side soft fill. Near-zero ambient in the top 45% empty zone. Shallow DOF, 35mm portrait lens, subtle film grain, matte editorial finish. Direct serious authoritative gaze into camera, slight 3/4 left angle. NO TEXT anywhere in image. 4:5 vertical composition.",
+      "textPayload": null
+    },
+    {
+      "id": "slide-07",
+      "filename": "slide-07-cta.png",
+      "narrativeBeat": "cta",
+      "character": true,
+      "characterHint": "MANDATORY ETHNICITY: Colombian Latin American MESTIZO man, 38 years old. SKIN TONE: warm olive-brown with visible bronze undertones — mestizo Colombian complexion, clearly DARKER than a caucasian person. NOT pale, NOT ivory. HAIR PATTERN: dark brown/near-black hair on top with silver-gray streaks ONLY at the TEMPLES (above the ears). BEARD: short trimmed full beard with gray-white streaks through dark base. NECKLACE: thick silver figaro chain visible over collar of black polo. BUILD: stocky robust, broad shoulders. ABSOLUTELY NO HAT, NO CAP, NO BEANIE, NO HEAD COVERING OF ANY KIND — he is completely bare-headed so the gray temples are clearly visible. Refs [1, 5, 7]. COMPOSITION REQUIREMENT: subject must be positioned ENTIRELY within the RIGHT 50% of the frame (right half only). The LEFT 50% of the frame must be PURE EMPTY deep black negative space — no subject, no arms, no props, no light spill, no gradient. Think of it as a vertical split: right half = subject, left half = empty black for overlay text.",
+      "concept": "ZERO-TOLERANCE IDENTITY CTA PORTRAIT of a Colombian MESTIZO man (warm olive-brown skin, clearly NOT caucasian). 38 years old. Dark brown hair on top with silver-gray streaks ONLY at temples. Short trimmed full beard with gray streaks. Thick silver figaro chain visible over black polo collar. Stocky robust build. BARE HEAD — absolutely no hat, no cap, no beanie. The subject is positioned ENTIRELY within the RIGHT 50% of the frame — his body, arms, and prop are contained within the right vertical half. The LEFT 50% of the frame is completely empty deep black #050505 negative space (for overlay headline): no subject, no light spill, no gradient, no prop, pure dark. He holds a modern smartphone vertically in his right hand at mid-chest height, screen slightly angled toward camera showing a faint dark UI with gold-colored JSON code. Warm confident direct gaze into camera, slight forward lean. Background: deep black textured wall behind the subject. Camera-left warm directional rim light at #D4AF37 wraps his left jaw and shoulder — the rim light must NOT spill into the left empty half of the frame. Right side soft fill. Shallow DOF, 35mm, film grain, matte finish. NO TEXT anywhere in image. 4:5 vertical composition.",
+      "textPayload": null
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.1",
+    "generatedBy": "manual-regen2-post-qa",
+    "generatedAt": "2026-04-23T21:31:00.000Z",
+    "brandConfig": "brand.config.json",
+    "handle": "@alexemprendee",
+    "brandName": "Alexander Cast",
+    "regenReason": "2nd QA pass still flagged identity drift (pale skin, wrong gray pattern, missing chain, hat appeared, safe zone not respected on slide-07). 3rd attempt with prescriptive ethnicity anchors (mestizo Colombian) + explicit NO HAT + strict 50/50 vertical split for slide-07."
+  }
+}

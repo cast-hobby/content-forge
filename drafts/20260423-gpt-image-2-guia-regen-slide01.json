@@ -1,0 +1,27 @@
+{
+  "concept": "gpt-image-2-guia-practica",
+  "slug": "gpt-image-2-guia",
+  "date": "20260423",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 1,
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D4AF37",
+    "lightAngle": "warm left key light at 45 degrees, golden rim light from left-rear",
+    "recurringProp": "smartphone with bright glowing screen",
+    "mood": "dark editorial, boutique studio, sober luxury, matte grain",
+    "backgroundFamily": "deep black #050505 background with subtle dark texture"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-portada.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterHint": "identity-first: Latin American man, late 30s, olive-warm medium skin tone, dark hair with CLEARLY VISIBLE silver-gray streaks at temples, short trimmed beard with visible salt-and-pepper gray mixed throughout facial hair — robust build, silver chain necklace — positioned right-of-center, 3/4 angle, holding a glowing smartphone at chest level with both hands, calm and authoritative direct gaze toward camera, warm golden rim light from left-rear, refs [1, 5, 6, 7]",
+      "concept": "Latin American man in dark boutique studio, 3/4 angle, holding a glowing smartphone at chest level with both hands, calm authoritative direct gaze toward camera. Background is deep black #050505 with subtle dark texture. Warm golden key light from left at 45 degrees creates a sharp editorial rim on his jaw and shoulder. On the left side of the frame, a soft glowing holographic panel floats with #D4AF37 golden border glow. Lower two-thirds occupied by figure, top third completely clear dark space. Matte grain film texture. NO TEXT in the image.",
+      "textPayload": null
+    }
+  ]
+}

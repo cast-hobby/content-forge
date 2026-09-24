@@ -1,0 +1,376 @@
+{
+  "concept": "4-skills-claude-ecosistema",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "pillar": "educativo",
+  "firma": "Alexander Cast",
+  "handle_publico": "@alexemprendee",
+  "hook_line_1": "4 SKILLS DE CLAUDE QUE YA USO CADA DÍA",
+  "topic_summary": "4 skills de Claude Code que Alexander usa en su ecosistema real (content-forge, UGC Colombia, Jarvis/n8n) — cómo un archivo de instrucciones convierte a Claude en un agente especializado para tu operación",
+  "researchFile": null,
+  "dopamine_check": {
+    "pattern_interrupt": true,
+    "curiosity_gap": true,
+    "reframe": true,
+    "micro_payoff": true,
+    "closed_loop": true,
+    "cta_low_friction": true
+  },
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · golden rim light at #D4AF37 · subtle fill from right",
+    "lightIntensity": "soft directional · deep crushed shadows · preserved warm highlights · low ambient",
+    "recurringProp": "matte black laptop with glowing screen on dark desk surface",
+    "mood": "developer boutique editorial · quiet authority · late night build session",
+    "cameraPreference": "35mm mid-shot · shallow DOF · subtle film grain · desaturated except gold tones",
+    "wardrobeTone": "solid black polo or dark tee · silver chain necklace visible · clean matte dark",
+    "backgroundFamily": "deep black textured surface · dark concrete or matte desk · near-zero ambient"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "concept": "Identity-first editorial portrait. Latin American man, late 30s, olive-warm medium skin tone, dark hair with silver-gray temples neatly styled back, short trimmed beard with prominent gray streaks, robust build, silver figaro chain necklace visible at collar. Wearing a solid black polo. Standing slightly left-of-center against a deep black textured wall. He holds a small glowing object in his open right palm — a minimalist gold square icon with the Anthropic asterisk symbol rendered in matte black inside it, warm golden backlight emanating from it. Top 40% of frame is empty negative space with near-zero ambient for headline text. Camera-left warm directional golden rim light at #D4AF37 wraps his shoulder and jaw. Right side soft fill. Shallow DOF, 35mm, subtle film grain. No text in image. 4:5 aspect ratio.",
+      "composition": "Subject left-of-center · prop centered in open palm at chest height · top 40% empty for headline · deep black background · golden rim on left shoulder",
+      "character": true,
+      "characterHint": "Frontal or slight 3/4 left, direct gaze into camera, expression serious and assured, palm open holding glowing icon — refs [1, 5, 6, 7]",
+      "continuity": {
+        "connectsToPrevious": null,
+        "connectsToNext": "same dark desk environment establishes itself in slide-02 as pure typography on black",
+        "narrativeLink": "establishes Alexander as the authority on Claude skills before defining the concept"
+      },
+      "textPayload": {
+        "margin": "hero",
+        "renderInImage": {
+          "headline": {
+            "text": "4 SKILLS DE CLAUDE",
+            "style": "display-xl",
+            "position": "top-center",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 1,
+            "break_after": null
+          },
+          "subhead": {
+            "text": "QUE YA USO CADA DÍA",
+            "style": "display-large",
+            "position": "top-center",
+            "color": "white",
+            "case": "uppercase",
+            "maxLines": 1
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": "Alexander Cast · @alexemprendee",
+          "elements": [
+            {
+              "type": "accent-bar",
+              "position": "bottom-signature-above",
+              "widthRatio": 0.057,
+              "color": "gold"
+            }
+          ]
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-02",
+      "filename": "slide-02-setup.png",
+      "narrativeBeat": "setup",
+      "concept": "Pure editorial typography slide. Deep black background #050505, zero imagery. Bold typographic hierarchy rendered directly in the image. No person, no props. The composition lives entirely in the text. Warm gold tone #D4AF37 used as accent on the key concept phrase. Clean negative space at top and bottom. 4:5 aspect ratio.",
+      "composition": "Full-bleed black · text anchored top-left with generous margin · gold accent on key phrase · breathing room at bottom 30%",
+      "character": false,
+      "characterHint": null,
+      "continuity": {
+        "connectsToPrevious": "transitions from hero portrait to pure concept — same dark environment, different register",
+        "connectsToNext": "defines the concept that slides 03-06 will demonstrate one by one",
+        "narrativeLink": "answers the implicit question from slide-01: what exactly is a Claude skill?"
+      },
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "¿QUÉ ES UN SKILL DE CLAUDE?",
+            "style": "display-medium",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 2,
+            "break_after": "SKILL"
+          },
+          "body": {
+            "text": "Un archivo de instrucciones que le enseña a Claude tu proceso, tu cliente y tu sistema. No responde genérico: responde desde adentro de tu operación.",
+            "style": "body-sans",
+            "position": "mid-left",
+            "color": "white",
+            "align": "left",
+            "widthRatio": 0.72
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": false,
+          "logoPosition": null,
+          "microCopy": null,
+          "elements": []
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-03",
+      "filename": "slide-03-skill-01.png",
+      "narrativeBeat": "insight",
+      "concept": "Dark editorial product shot. Close-up of a matte black laptop open on a deep black textured desk surface. The screen displays a JSON file with syntax highlighting — keys in white, string values in #D4AF37 gold, structure brackets in gray-light. A leather-bound dark notebook and a gold ballpoint pen rest beside the laptop at 45 degrees. Camera-left warm directional golden rim light grazes the laptop lid edge and the pen barrel. Top 30% of frame is empty dark space for text overlay. No person. Shallow DOF with the laptop screen sharp and notebook softly bokeh. 35mm, subtle film grain. 4:5 aspect ratio.",
+      "composition": "Laptop centered-left · notebook and pen lower-right · top 30% empty for headline · golden rim on hardware edge · deep black background",
+      "character": false,
+      "characterHint": null,
+      "continuity": {
+        "connectsToPrevious": "same dark desk environment introduced in sceneSeed · recurring prop laptop enters frame",
+        "connectsToNext": "desk surface and light direction persist · prop changes to smartphone for slide-04",
+        "narrativeLink": "first concrete proof of the concept defined in slide-02"
+      },
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "01 BRIEF ARCHITECT",
+            "style": "display-large",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 1
+          },
+          "body": {
+            "text": "Convierte un topic en un brief JSON completo: narrativa, paleta, personaje y prompts visuales por slide. Carrusel listo en minutos, no en horas.",
+            "style": "body-sans",
+            "position": "bottom-left",
+            "color": "white",
+            "align": "left",
+            "widthRatio": 0.78
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": false,
+          "logoPosition": null,
+          "microCopy": null,
+          "elements": []
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-04",
+      "filename": "slide-04-skill-02.png",
+      "narrativeBeat": "insight",
+      "concept": "Dark editorial product shot. A matte black widescreen monitor angled slightly toward camera sits on a dark desk surface. The screen displays a Claude Code agent interface: on the left panel a PNG thumbnail of a dark editorial carousel slide is visible, on the right panel a structured layout plan JSON with gold highlighted keys like textColor, position, safeZone, shadow, glow. Thin golden ruler/grid lines overlay the thumbnail showing safe zones and alignment guides. Beside the monitor: a minimal notebook and a gold metallic pen. Behind the monitor: subtle soft focused deep black texture with a warm directional rim light from camera-left creating a golden glow on the monitor edge. Top 40% clear dark space for headline. No text in image except the faint UI on screen. 4:5 vertical.",
+      "composition": "Monitor center-right · left panel image thumbnail + right panel layout JSON · golden ruler overlay · top 40% empty · dark backdrop",
+      "character": false,
+      "characterHint": null,
+      "continuity": {
+        "connectsToPrevious": "same dark surface and light direction · laptop exits, smartphone enters as recurring prop variation",
+        "connectsToNext": "same desk environment · monitor enters frame for slide-05",
+        "narrativeLink": "expands the ecosystem from content strategy to UGC production"
+      },
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "02 LAYOUT ARCHITECT",
+            "style": "display-large",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 1
+          },
+          "body": {
+            "text": "Analiza cada PNG con visión computacional y decide color, posición, sombra y glow del texto slide por slide. Layout consciente de la imagen, no plantilla ciega.",
+            "style": "body-sans",
+            "position": "bottom-left",
+            "color": "white",
+            "align": "left",
+            "widthRatio": 0.78
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": false,
+          "logoPosition": null,
+          "microCopy": null,
+          "elements": []
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-05",
+      "filename": "slide-05-skill-03.png",
+      "narrativeBeat": "insight",
+      "concept": "Dark editorial product shot. A matte black widescreen monitor angled slightly on a dark desk shows a quality-check dashboard: a grid of 8 thumbnail slides in a 2x4 layout, each with a small status badge beside it (3 with a gold checkmark, 2 with a gold warning triangle, 1 with a gold X mark — abstract glyphs, no readable micro-text). A thin golden line highlights one of the flagged thumbnails. Beside the monitor on the desk: a compact dark magnifying glass with a golden rim, and a small stack of matte black prints. Camera-left warm directional rim light. Top 40% clear dark space for headline. Background deep black textured. 4:5 vertical.",
+      "composition": "Monitor center · QA grid 2x4 with status glyphs · magnifying glass prop · top 40% empty · deep black backdrop",
+      "character": false,
+      "characterHint": null,
+      "continuity": {
+        "connectsToPrevious": "same dark surface · monitor replaces smartphone · golden accent on screen elements maintains visual thread",
+        "connectsToNext": "monitor exits · two smartphones enter side-by-side for slide-06",
+        "narrativeLink": "expands ecosystem from content to full automation — Jarvis and n8n territory"
+      },
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "03 VISUAL QA",
+            "style": "display-medium",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 2,
+            "break_after": "JARVIS"
+          },
+          "body": {
+            "text": "Valida paleta, identidad del personaje y safe zones antes de componer. El filtro que atrapa el drift antes de que llegue a publicación.",
+            "style": "body-sans",
+            "position": "bottom-left",
+            "color": "white",
+            "align": "left",
+            "widthRatio": 0.78
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": false,
+          "logoPosition": null,
+          "microCopy": null,
+          "elements": []
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-06",
+      "filename": "slide-06-skill-04.png",
+      "narrativeBeat": "insight",
+      "concept": "Dark editorial product shot. Two smartphones placed side by side on a matte black desk surface, screens facing camera. Left phone shows a generic Instagram carousel post — muted, desaturated, warm-toned beige background with plain orange typography (no handle visible, post deliberately anonymous). Right phone shows a brief JSON document with gold syntax highlighting (#D4AF37 on keys) on a dark UI — clearly a reinterpreted version of the same content with editorial dark branding. Between the two phones, a subtle gold arrow drawn in light (like a light-painted chevron) points from left phone to right phone. Camera-left warm golden rim light at #D4AF37 catches both phone frames. Top 30% frame empty dark for text. No person. 35mm, shallow DOF, film grain. 4:5 aspect ratio.",
+      "composition": "Two phones horizontal centered · gold light-painted arrow between them · desaturated left phone vs gold-highlighted right phone creates contrast · top 30% empty",
+      "character": false,
+      "characterHint": null,
+      "continuity": {
+        "connectsToPrevious": "same dark desk surface and golden rim light · phones introduce dual-object composition",
+        "connectsToNext": "desk clears — Alexander returns for closing CTA in slide-07",
+        "narrativeLink": "closes the four-skill arc by referencing this very carousel — meta moment that rewards attentive viewers"
+      },
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "04 CONTENT CLONE ANALYZER",
+            "style": "display-medium",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 2,
+            "break_after": "CONTENT"
+          },
+          "body": {
+            "text": "Pásale un carrusel viral de tu nicho. El skill lo analiza y devuelve un brief reinterpretado con tu voz, tu paleta y tu personaje. Sin plagiar, sin bloqueo creativo.",
+            "style": "body-sans",
+            "position": "bottom-left",
+            "color": "white",
+            "align": "left",
+            "widthRatio": 0.78
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": false,
+          "logoPosition": null,
+          "microCopy": null,
+          "elements": []
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-07",
+      "filename": "slide-07-cta.png",
+      "narrativeBeat": "cta",
+      "concept": "Identity-first editorial portrait. Latin American man, late 30s, olive-warm medium skin tone, dark hair with silver-gray temples neatly styled back, short trimmed beard with prominent gray streaks, robust build, silver figaro chain necklace visible at collar. Wearing a solid black polo. Standing right-of-center against deep black textured wall. He holds a smartphone in his right hand at mid-chest height, screen slightly angled toward camera showing a faint JSON brief document with gold text — implying he is showing the viewer his workflow. His expression is direct and warm, a slight confident forward lean. Left side of frame has generous empty space for headline text. Camera-left warm directional golden rim light at #D4AF37 wraps his left shoulder and jaw line. Soft right fill. Shallow DOF, 35mm, subtle film grain. No text in image. 4:5 aspect ratio.",
+      "composition": "Subject right-of-center · smartphone prop visible at chest · left 45% empty for headline text · golden rim on left shoulder and jaw · deep black background",
+      "character": true,
+      "characterHint": "Right-of-center, direct gaze into camera, slight forward lean, confident and warm expression, right hand holds smartphone screen toward viewer — refs [1, 5, 7]",
+      "continuity": {
+        "connectsToPrevious": "same dark environment returns to Alexander — visual bookend with slide-01",
+        "connectsToNext": null,
+        "narrativeLink": "closes the loop opened in slide-01 — Alexander built these skills, now offers them directly"
+      },
+      "textPayload": {
+        "margin": "hero",
+        "renderInImage": {
+          "headline": {
+            "text": "¿QUIERES ALGUNO DE ESTOS SKILLS?",
+            "style": "display-stacked",
+            "position": "mid-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 3,
+            "break_after": "ALGUNO"
+          },
+          "subhead": {
+            "text": "Comenta SKILLS y te los mando por DM",
+            "style": "body-sans",
+            "position": "bottom-left",
+            "color": "white",
+            "maxLines": 1
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": "Alexander Cast · @alexemprendee",
+          "elements": [
+            {
+              "type": "accent-bar",
+              "position": "bottom-signature-above",
+              "widthRatio": 0.057,
+              "color": "gold"
+            }
+          ]
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": []
+    }
+  ],
+  "caption_suggestion": "Nadie te dice que Claude puede trabajar dentro de tu operación — no como un chatbot genérico, sino como un agente entrenado en tu proceso, tu cliente y tu sistema.\n\nEstos 4 skills los uso hoy en content-forge, en Jarvis y en la agencia. No son teoría.\n\nComenta SKILLS y te los mando por DM.\n\n#claudeai #skillsdeIA #automatizacion #emprendimientodigital #creadordecontenido #ugc #n8n #inteligenciaartificial #marketingdigital #contenidolatam",
+  "meta": {
+    "schemaVersion": "1.1",
+    "generatedBy": "content-forge-clone-analyzer",
+    "brandConfig": "brand.config.json",
+    "createdAt": "2026-04-23",
+    "clonedFrom": {
+      "platform": "instagram",
+      "author": "@jhonblackecom",
+      "sourceUrl": "https://www.instagram.com/p/DXfQ45RCd4O/",
+      "runDir": "output/clones/20260423-instagram-jhonblackecom",
+      "originalSlideCount": 7,
+      "originalAspectRatio": "1:1",
+      "originalPalette": "#E8E4DC hueso + #E8461A naranja + #2D7A3A verde",
+      "structurePreserved": true,
+      "contentReinterpreted": true
+    }
+  }
+}

@@ -7,26 +7,47 @@ tools:
   - Write
 ---
 
-# content-forge-copy-overlay — Copy editorial por slide
+# content-forge-copy-overlay — Copy complementario + QA de texto renderizado
+
+## Cambio importante: el headline principal ya viene en la imagen
+
+Desde v1.1 el `content-forge-brief-architect` decide qué texto va integrado en la imagen (eyebrow, headline, número impactante) y qué va por overlay. gpt-image-2 renderiza esos textos directamente como parte del diseño → consistencia visual real con la composición. Tu rol ya **no** es escribir el headline principal; ahora es:
+
+1. **Validar** que los textos que gpt-image-2 y Gemini dejaron en la imagen coinciden exactamente con `slide.textPayload.renderInImage` del brief. Si detectas drift (spelling, palabras cambiadas, texto duplicado), márcalo para re-render.
+2. **Escribir el copy complementario** que va por overlay: handle, logo (siempre), micro-copy (CTA diminuto, "Link en bio"), body largo si el slide lo pide, signature de cierre.
 
 ## Input
 
-- `<dir>/../../drafts/<brief>.json` — brief con topic, pilar, hook
-- `<dir>/layout-plan.json` — safe zones y tamaños por slide
+- `<dir>/../../drafts/<brief>.json` — brief con topic, pilar, `textPayload` por slide
+- `<dir>/manifest.json` — PNGs ya generados con textPayload ya renderizado
+- `<dir>/layout-plan.json` — safe zones y recomendaciones image-aware
 - `brand.config.json` — voice.style, voice.forbiddenPhrases, voice.preferredPhrases, brand.handle
 
-## Tu trabajo
+## Tu trabajo: dos bloques
 
-Por cada slide redacta:
+### Bloque A · QA del texto en imagen
+
+Para cada slide que tenga `textPayload.renderInImage`:
+
+- Lee la imagen final (o el manifest que registra qué se le pidió al modelo).
+- Compara `textPayload.renderInImage.headline.text` con lo que se ve realmente en la imagen.
+- Si coincide carácter por carácter → `text_qa: "pass"`.
+- Si hay drift mínimo (tilde, mayúscula) → `text_qa: "minor_drift"` y propone la corrección.
+- Si el texto está roto o falta → `text_qa: "fail"` y marca `needs_regen: true`.
+
+### Bloque B · Copy de overlay
+
+Por cada slide redacta los elementos que van **en overlay** (no en imagen):
 
 | Campo | Font | Regla | Max |
 |---|---|---|---|
-| `eyebrow` | Inter 600 tracking | Opcional · UPPERCASE | 4 palabras |
-| `headline` | Anton 400 display | Uppercase al render · verdad directa | 6 palabras |
-| `body` | Inter 400 | Opcional · sentence case · complementa | 18 palabras |
-| `signature` | Inter 500 amber | Solo handle del config · solo slide final | 1 línea |
+| `body` | Inter 400 | Opcional · sentence case · complementa el headline de la imagen · solo si `textPayload.renderInImage.headline` NO ya cubre el mensaje | 18 palabras |
+| `microCopy` | Inter 500 · pequeño | Opcional · CTA diminuto, "Link en bio", footer | 4 palabras |
+| `signature` | Inter 500 amber | Solo handle del config · solo slide final o portada | 1 línea |
 
 Todo en el idioma del config (`brand.primaryLanguage`).
+
+No redactes `eyebrow` ni `headline` de overlay: ya están en la imagen.
 
 ## Voz — lee `brand.config.json.voice`
 
@@ -74,15 +95,21 @@ Escribe `<dir>/overlay-copy.json`:
   "handle_publico": "@marca",
   "slides": {
     "slide-01": {
-      "eyebrow": "EDUCATIVO · 01",
-      "headline": "Tu headline max 6 palabras",
-      "body": "",
-      "signature": "",
-      "position": "bottom",
-      "colorScheme": "dark",
-      "showLogo": true,
-      "logoPosition": "bottom-right",
-      "backgroundHint": "dark"
+      "text_qa": "pass",
+      "qa_notes": "",
+      "needs_regen": false,
+      "inImageSummary": {
+        "headline": "Los primeros 0.8 segundos deciden todo",
+        "eyebrow": "ERROR 01"
+      },
+      "overlay": {
+        "body": "",
+        "microCopy": "",
+        "signature": "",
+        "showLogo": true,
+        "logoPosition": "bottom-right",
+        "backgroundHint": "dark"
+      }
     }
   }
 }
@@ -90,12 +117,12 @@ Escribe `<dir>/overlay-copy.json`:
 
 ## Reglas duras
 
-1. **Uppercase solo Anton (headline + eyebrow).** Inter va sentence case excepto eyebrow.
-2. **Accent color = eyebrow + signature.** Headline principal nunca en primary.
-3. **Max 2200 chars totales** sumando todos los slides.
-4. **No repetir el headline en el body.** Body complementa, no parafrasea.
-5. **Si el layout tiene safeAreas pequeñas**, recorta body agresivamente (o déjalo vacío).
-6. **El signature solo aparece en slide final** (o portada si el layout lo marca con `showLogo: false` — entonces signature refuerza identidad).
+1. **No redactar el headline principal** — ya viene en la imagen. Solo lo citas en `inImageSummary` para referencia del compositor.
+2. **Body de overlay solo si aporta** contra el headline-en-imagen. Si no aporta, deja `body: ""`.
+3. **Accent color = signature y micro-copy.** El cuerpo en color light/dark según layout.
+4. **Max 1800 chars totales** sumando todos los overlays (el texto en imagen no cuenta).
+5. **El signature solo aparece en slide final** (o portada si el layout lo marca con `showLogo: false`).
+6. **Si `text_qa: "fail"`**, marca `needs_regen: true` y describe en `qa_notes` qué palabra salió mal. El orquestador decidirá si re-genera ese slide.
 
 ## Ejemplos por voz
 

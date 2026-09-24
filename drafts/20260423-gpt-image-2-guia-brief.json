@@ -1,0 +1,320 @@
+{
+  "concept": "gpt-image-2-guia-practica",
+  "slug": "20260423-gpt-image-2-guia-brief",
+  "date": "2026-04-23",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 8,
+  "pillar": "educativo",
+  "hook_line_1": "GPT Image 2 cambió las reglas. Nadie te explica cómo.",
+  "topic_summary": "Guía práctica sobre GPT Image 2: qué es, qué puede y no puede hacer, casos de uso para creadores y emprendedores LATAM, comparativa vs Midjourney/Flux/Ideogram y cómo acceder hoy.",
+  "dopamine_check": {
+    "pattern_interrupt": true,
+    "curiosity_gap": true,
+    "reframe": true,
+    "micro_payoff": true,
+    "closed_loop": true,
+    "cta_low_friction": true
+  },
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D4AF37",
+    "lightAngle": "warm left key light at 45 degrees, golden rim light from left-rear",
+    "recurringProp": "smartphone with bright glowing screen (appears in slides 01, 02, 03, 05)",
+    "mood": "dark editorial, boutique studio, sober luxury, matte grain",
+    "backgroundFamily": "deep black #050505 background with subtle dark texture, no harsh gradients",
+    "colorPalette": {
+      "primary": "#050505",
+      "dark": "#D4AF37",
+      "light": "#C9A84C",
+      "grayDark": "#3D3D3C",
+      "white": "#FFFFFF"
+    },
+    "typography": {
+      "display": "Anton",
+      "sans": "Inter"
+    }
+  },
+  "signature": "Alexander Cast · @alexemprendee",
+  "caption_starter": "La verdad es que la mayoría de emprendedores en LATAM no saben que GPT Image 2 ya está disponible y resuelve el problema de creativos sin presupuesto de diseño. Aquí va la guía completa:",
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-portada.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterHint": "identity-first: Latin American man, late 30s, olive-warm medium skin tone, dark hair with silver-gray temples, short trimmed beard with gray streaks, robust build, silver chain necklace — positioned right-of-center, 3/4 angle, holding a glowing smartphone at chest level with both hands, calm and authoritative direct gaze toward camera, warm golden rim light from left-rear, refs [1, 5, 6, 7]",
+      "concept": "Latin American man in dark boutique studio, 3/4 angle, holding a glowing smartphone at chest level with both hands, calm authoritative direct gaze toward camera. Background is deep black #050505 with subtle dark texture. Warm golden key light from left at 45 degrees creates a sharp editorial rim on his jaw and shoulder. On the left side of the frame, a soft glowing holographic panel floats — an abstract ultra-realistic product render with #D4AF37 golden border glow. Lower two-thirds occupied by figure, top third left clear. Matte grain film texture. 4:5 vertical editorial composition.",
+      "textPayload": {
+        "renderInImage": {
+          "eyebrow": {
+            "text": "IA TOOLS",
+            "style": "label-small",
+            "color": "dark",
+            "position": "top-left"
+          },
+          "headline": {
+            "text": "GPT Image 2 cambió las reglas.",
+            "style": "display-large",
+            "color": "white",
+            "position": "bottom-center",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "elements": [
+            {
+              "type":        "chip",
+              "text":        "IA TOOLS",
+              "position":    "top-left",
+              "color":       "gold",
+              "textColor":   "gold",
+              "borderColor": "gold",
+              "scale":       "label"
+            },
+            {
+              "type":       "accent-bar",
+              "position":   "bottom-signature-above",
+              "color":      "gold",
+              "widthRatio": 0.055,
+              "thickness":  2.5,
+              "opacity":    1.0
+            }
+          ],
+          "microCopy":   "",
+          "signature":   "@alexemprendee",
+          "showLogo":    true,
+          "logoPosition":"bottom-right"
+        }
+      }
+    },
+    {
+      "id": "slide-02",
+      "filename": "slide-02-que-es.png",
+      "narrativeBeat": "setup",
+      "character": false,
+      "characterHint": "",
+      "concept": "Editorial flat lay on a deep black #050505 surface. Center: a sleek modern smartphone with a bright glowing screen, face-up, displaying a photorealistic AI-generated product image — a premium dark-label bottle with a crisp golden label. Flanking the phone: a small geometric gold bar (#D4AF37) on the left and a minimal stack of matte white cards on the right. Subtle circuit-board line pattern in #3D3D3C forms the background texture. Soft diffuse studio light from above-right casting gentle shadows. Matte grain finish, boutique tech editorial mood. Top 30% dark space clear for text overlay. No text rendered in image. 4:5 vertical.",
+      "textPayload": {
+        "renderInImage": {
+          "eyebrow": {
+            "text": "QUE ES",
+            "style": "label-small",
+            "color": "dark",
+            "position": "top-left"
+          },
+          "headline": {
+            "text": "El modelo de imágenes más potente de OpenAI.",
+            "style": "display-large",
+            "color": "white",
+            "position": "bottom-center",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "microCopy": "",
+          "signature": "",
+          "showLogo": true,
+          "logoPosition": "bottom-right"
+        }
+      }
+    },
+    {
+      "id": "slide-03",
+      "filename": "slide-03-si-puede.png",
+      "narrativeBeat": "tension",
+      "character": false,
+      "characterHint": "",
+      "concept": "Dark boutique studio tabletop composition on #050505 background. A glowing smartphone propped upright, screen facing camera, displaying a bright photorealistic product creative. Beside it: a dark perfume bottle with a golden label, and a minimal ceramic cup. Thin #D4AF37 golden divider lines float between the objects as abstract editorial elements. Warm golden left key light at 45 degrees, sharp shadows, matte grain texture. Top 30% clear dark space for text. No external text in image. 4:5 vertical.",
+      "textPayload": {
+        "renderInImage": {
+          "eyebrow": {
+            "text": "SI PUEDE",
+            "style": "label-small",
+            "color": "dark",
+            "position": "top-left"
+          },
+          "headline": {
+            "text": "Texto exacto dentro de la imagen. Sin errores.",
+            "style": "display-large",
+            "color": "white",
+            "position": "bottom-center",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "microCopy": "",
+          "signature": "",
+          "showLogo": true,
+          "logoPosition": "bottom-right"
+        }
+      }
+    },
+    {
+      "id": "slide-04",
+      "filename": "slide-04-no-puede.png",
+      "narrativeBeat": "tension",
+      "character": false,
+      "characterHint": "",
+      "concept": "Minimalist dark editorial composition on deep #050505 background. Central element: a thin #D4AF37 golden circle outline, inside which a purely geometric abstract human silhouette icon has a diagonal slash through it — no face details, fully abstract. Surrounding the circle: three small floating charcoal #3D3D3C rectangular cards arranged in a loose triangle, each containing a single abstract icon with a thin golden X overlay: a video play triangle with an X, a multi-figure abstract silhouette with an X, and a branching diagram with an X. Background has a very subtle dark geometric grid in #3D3D3C. Cool ambient light, editorial clinical mood, matte grain. Top 30% dark space clear. No text in image. 4:5 vertical.",
+      "textPayload": {
+        "renderInImage": {
+          "eyebrow": {
+            "text": "NO PUEDE",
+            "style": "label-small",
+            "color": "dark",
+            "position": "top-left"
+          },
+          "headline": {
+            "text": "Video, 3D y consistencia de personajes: aún fallan.",
+            "style": "display-large",
+            "color": "white",
+            "position": "bottom-center",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "microCopy": "",
+          "signature": "",
+          "showLogo": true,
+          "logoPosition": "bottom-right"
+        }
+      }
+    },
+    {
+      "id": "slide-05",
+      "filename": "slide-05-casos-uso.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "characterHint": "",
+      "concept": "Top-down editorial flat lay on #050505 background showing a LATAM digital entrepreneur's dark work surface. Items in clean editorial grid: a glowing smartphone propped upright displaying a social media ad creative, a tablet face-up showing a course visual, a small dark-label product bottle with a branded golden label, and a few matte white cards. One gold metallic pen (#D4AF37) and a dark notebook complete the scene. Overhead soft diffuse studio light with a slight warm cast, gentle shadows, #D4AF37 accent glows on metallic objects. Boutique agency desk mood, organized, modern. No text in image. Top 30% dark space clear. 4:5 vertical.",
+      "textPayload": {
+        "renderInImage": {
+          "eyebrow": {
+            "text": "CASOS LATAM",
+            "style": "label-small",
+            "color": "dark",
+            "position": "top-left"
+          },
+          "headline": {
+            "text": "Mockups, posts y contenido UGC en minutos.",
+            "style": "display-large",
+            "color": "white",
+            "position": "bottom-center",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "microCopy": "",
+          "signature": "",
+          "showLogo": true,
+          "logoPosition": "bottom-right"
+        }
+      }
+    },
+    {
+      "id": "slide-06",
+      "filename": "slide-06-comparativa.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "characterHint": "",
+      "concept": "Dark editorial split-composition on #050505 background. Four equal quadrant panels in a 2x2 grid separated by thin #D4AF37 golden lines, center intersection marked by a small glowing #D4AF37 diamond. Each quadrant renders a distinct abstract visual style as aesthetic sample — no tool names or logos: top-left shows hyper-realistic dark product photo with golden label detail, top-right shows a painterly artistic render with rich warm tones, bottom-left shows a clean minimal product on a near-white background, bottom-right shows a bold geometric typographic layout with crisp abstract letter-forms. Each quadrant background is a slightly different dark shade (#050505, #080808, #0C0C0C, #101010) for subtle depth. Matte grain texture. Top 30% dark space on top-left quadrant clear. 4:5 vertical.",
+      "textPayload": {
+        "renderInImage": {
+          "eyebrow": {
+            "text": "COMPARATIVA",
+            "style": "label-small",
+            "color": "dark",
+            "position": "top-left"
+          },
+          "headline": {
+            "text": "GPT Image 2 gana en texto. Midjourney en arte.",
+            "style": "display-large",
+            "color": "white",
+            "position": "bottom-center",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "microCopy": "",
+          "signature": "",
+          "showLogo": true,
+          "logoPosition": "bottom-right"
+        }
+      }
+    },
+    {
+      "id": "slide-07",
+      "filename": "slide-07-acceso-precios.png",
+      "narrativeBeat": "proof",
+      "character": false,
+      "characterHint": "",
+      "concept": "Minimalist dark studio composition on #050505 background. A slim dark laptop open at an angle, screen glowing with a generic AI chat interface — dark UI, a bright prompt input field with a subtle #D4AF37 golden cursor glow, no visible logos. Beside the laptop: a small dark notebook and a gold metallic pen (#D4AF37). Below the laptop in the foreground: three minimal pricing cards side by side in charcoal #3D3D3C, the left card accented with a thin #D4AF37 border, each card containing only abstract geometric icons and golden horizontal accent lines. Warm golden left key light, subtle #D4AF37 screen glow reflecting onto the desk surface. Matte grain texture, trustworthy editorial mood. Top 30% dark space clear. No text in image. 4:5 vertical.",
+      "textPayload": {
+        "renderInImage": {
+          "eyebrow": {
+            "text": "ACCESO",
+            "style": "label-small",
+            "color": "dark",
+            "position": "top-left"
+          },
+          "headline": {
+            "text": "ChatGPT Plus o API. Hoy mismo puedes empezar.",
+            "style": "display-large",
+            "color": "white",
+            "position": "bottom-center",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "microCopy": "",
+          "signature": "",
+          "showLogo": true,
+          "logoPosition": "bottom-right"
+        }
+      }
+    },
+    {
+      "id": "slide-08",
+      "filename": "slide-08-cta.png",
+      "narrativeBeat": "cta",
+      "character": true,
+      "characterHint": "identity-first: Latin American man, late 30s, olive-warm medium skin tone, dark hair with silver-gray temples, short trimmed beard with gray streaks, robust build, silver chain necklace, dark black polo shirt — centered frontal angle, mid-chest up, looking directly into camera with a warm confident expression and a slight genuine smile, right hand with index finger pointing upward toward camera, warm golden rim light from left-rear creating a soft circular #D4AF37 glow halo behind figure, refs [1, 5, 6]",
+      "concept": "Latin American man in dark boutique studio, centered frontal angle, mid-chest up, right index finger pointing upward toward camera, slight genuine smile, direct warm gaze. Background is deep #050505 black. Behind him: a soft circular #D4AF37 to transparent warm glow halo, like a golden light ring effect. A glowing smartphone is held loosely in his left hand at waist level, its bright screen visible. Warm golden rim light from left-rear. Subtle horizontal #D4AF37 golden separator line at bottom of frame. Top 20% dark space clear for headline. Matte grain, editorial dark luxury, CTA warm energy. 4:5 vertical.",
+      "textPayload": {
+        "renderInImage": {
+          "eyebrow": {
+            "text": "",
+            "style": "label-small",
+            "color": "dark",
+            "position": "top-left"
+          },
+          "headline": {
+            "text": "Comenta IMAGEN y te mando el prompt.",
+            "style": "display-large",
+            "color": "white",
+            "position": "bottom-center",
+            "maxLines": 2
+          }
+        },
+        "renderInOverlay": {
+          "microCopy": "Comenta IMAGEN",
+          "signature": "@alexemprendee",
+          "showLogo": true,
+          "logoPosition": "bottom-right"
+        }
+      }
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.1",
+    "generatedBy": "content-forge-brief-architect",
+    "generatedAt": "2026-04-23T00:00:00.000Z",
+    "brandConfig": "brand.config.json",
+    "brandConfigVersion": "1.0.0",
+    "characterFile": "brand-assets/character/character.md",
+    "handle": "@alexemprendee",
+    "brandName": "Alexander Cast",
+    "characterRefsUsed": ["refs 1, 5, 6, 7 (slide-01 portada)", "refs 1, 5, 6 (slide-08 CTA)"]
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "concept": "3-errores-vender-instagram",
+  "slug": "20260507-3-errores-vender-instagram",
+  "date": "2026-05-07",
+  "topic": "Los 3 errores más comunes al vender en Instagram",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 10,
+  "pilar": "educativo",
+  "pillar": "educativo",
+  "firma": "Alexander",
+  "handle_publico": "@infiny",
+  "hook_line_1": "3 ERRORES QUE CIERRAN TUS VENTAS EN INSTAGRAM",
+  "topic_summary": "Los 3 errores más comunes que cometen emprendedores al vender en Instagram — copy genérico, no cualificar audiencia, vender sin confianza — con sus fixes prácticos y un caso concreto.",
+  "researchFile": null,
+  "dopamine_check": {
+    "pattern_interrupt": true,
+    "curiosity_gap": true,
+    "reframe": true,
+    "micro_payoff": true,
+    "closed_loop": true,
+    "cta_low_friction": true
+  },
+  "sceneSeed": {
+    "dominantColor": "#0A0A0A",
+    "secondaryColor": "#D4AF37",
+    "accentColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · golden rim light #D4AF37 wrapping jaw and shoulder · subtle fill from right",
+    "lightIntensity": "soft 3-point cinema lighting · crushed deep shadows · warm golden highlights · low ambient",
+    "recurringProp": "ceramic mug with dark coffee on a minimal matte-black surface",
+    "mood": "profesional-accesible · editorial cinematográfico · boutique studio moderno minimalista",
+    "cameraPreference": "35mm mid-shot · shallow depth of field · subtle film grain · desaturated except gold tones",
+    "wardrobeTone": "solid black polo or dark navy tee · clean matte dark · cadena plateada visible",
+    "backgroundFamily": "deep black #0A0A0A wall with radial warm gold glow · textured concrete or matte dark surface"
+  },
+  "brandAlignment": {
+    "palette": ["#0A0A0A", "#D4AF37", "#F5F0EB", "#FFFFFF"],
+    "mood": "profesional-accesible · paisa tranquilo · reflexivo · sin dramatismo · editorial cinematográfico",
+    "voiceStyle": "friendly-expert",
+    "characterRequired": true,
+    "characterPoseHints": [
+      "slide-01: frontal mid-shot, mirada directa a cámara, mano derecha con dedo índice señalando hacia arriba, expresión seria-accesible",
+      "slide-03: frontal o 3/4, ambas manos abiertas explicando, ceño levemente fruncido mostrando el error",
+      "slide-05: 3/4 angle, mano izquierda abierta hacia cámara como señalando, expresión de advertencia tranquila",
+      "slide-08: frontal mid-shot, manos entrecruzadas frente al pecho o una mano señalando hacia arriba, expresión de autoridad calmada"
+    ]
+  },
+  "slides": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "headline": "3 errores que cierran tus ventas en Instagram",
+      "body": "Si no los corriges, seguirás publicando sin que nadie compre.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": true,
+      "characterHint": "Alexander, hombre latinoamericano 35-42 años, tez morena clara con matices oliva, pelo negro corto con canas en sienes, barba corta bien recortada, cadena plateada, polo negro matte, de frente a cámara, dedo índice derecho apuntando hacia arriba, expresión seria y directa, plano medio hasta el pecho",
+      "platformBadges": ["instagram"],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized in the image. Pure cinematic portrait. Deep black #0A0A0A background with radial warm golden glow #D4AF37 centered behind subject. CENTER: Alexander — hombre latinoamericano 35-42 años, tez morena clara con matices oliva, pelo negro corto peinado hacia atrás con canas visibles en las sienes, barba corta bien recortada con canas, cadena plateada alrededor del cuello, polo negro sólido matte — plano medio hasta el pecho, de frente a cámara, dedo índice de la mano derecha apuntando hacia arriba, expresión seria y directa pero accesible. Camera-left warm 3-point cinema lighting, golden rim light #D4AF37 envolviendo mandíbula y hombro izquierdo. A su lado izquierdo a nivel cadera, pequeño: la taza de café cerámica sobre superficie matte negra. Top 40% empty deep black for headline overlay. Shallow depth of field, subtle film grain, -15% saturation except gold tones. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null,
+          "elements": [
+            { "type": "accent-bar", "position": "bottom-signature-above", "widthRatio": 0.057, "color": "gold" }
+          ]
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToNext": "mismo estudio, misma luz, cámara se aleja levemente para revelar más contexto",
+        "narrativeLink": "establece los 3 errores que el carrusel va a desarrollar"
+      }
+    },
+    {
+      "id": "slide-02",
+      "filename": "slide-02-intro.png",
+      "narrativeBeat": "setup",
+      "headline": "La verdad es que Instagram no falla",
+      "body": "El problema es cómo lo estás usando para vender.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": false,
+      "platformBadges": [],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized in the image. Pure minimalist flat-lay composition. Deep black #0A0A0A background. CENTER: a matte black smartphone face-up on a dark textured surface, screen showing a blurred warm abstract glow (no legible UI), beside it the recurring ceramic coffee mug with dark espresso and subtle steam. To the right: a small stack of two matte-black notebooks with a thin gold bookmark ribbon #D4AF37. Soft radial warm golden glow #D4AF37 emanating from center fading to absolute black at edges. Camera-top-down shot, 45° slight angle. Shallow depth of field, film grain, ultra clean negative space. Top 35% empty deep black for headline overlay. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "misma paleta #0A0A0A, transición de retrato humano a objeto editorial",
+        "connectsToNext": "introduce el primer error, mismo mood minimalista",
+        "narrativeLink": "reframe del problema: no es Instagram, es el método"
+      }
+    },
+    {
+      "id": "slide-03",
+      "filename": "slide-03-error-01.png",
+      "narrativeBeat": "tension",
+      "headline": "Error #1: copy genérico que no habla a nadie",
+      "body": "\"Compra ahora, calidad garantizada\" no le habla a tu cliente — le habla a todos y a ninguno.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": true,
+      "characterHint": "Alexander, mismas características físicas: polo negro, cadena plateada, barba con canas, ángulo 3/4, ambas manos abiertas al frente explicando el punto, ceño levemente fruncido mostrando que esto es un error, expresión de 'esto está mal y vamos a arreglarlo'",
+      "platformBadges": [],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Cinematic portrait. Deep black #0A0A0A background, radial golden glow #D4AF37 behind subject. Alexander — hombre latinoamericano 35-42 años, tez morena clara con matices oliva, pelo negro corto con canas en sienes, barba corta bien recortada con canas, cadena plateada, polo negro matte — ángulo 3/4, plano medio hasta la cintura, ambas manos abiertas frente al pecho explicando activamente, ceño levemente fruncido con expresión seria de advertencia tranquila. Camera-left warm 3-point cinema lighting, golden rim light #D4AF37 en mandíbula y hombro. En el borde inferior del frame, parcialmente visible: la taza cerámica de café en superficie negra. Top 35% empty deep black for overlay. Shallow DOF, film grain, -15% saturation except gold. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "misma luz y paleta, Alexander vuelve a cuadro para explicar el error",
+        "connectsToNext": "slide siguiente resuelve exactamente lo que este presenta como problema",
+        "narrativeLink": "tensión: el error más común que comete el 80% de emprendedores en IG"
+      }
+    },
+    {
+      "id": "slide-04",
+      "filename": "slide-04-fix-01.png",
+      "narrativeBeat": "insight",
+      "headline": "Hazlo así: escribe para una persona, no para todos",
+      "body": "Habla del dolor específico de tu cliente ideal. Cuanto más preciso, más convierte.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": false,
+      "platformBadges": [],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Minimalist editorial composition. Deep black #0A0A0A background. CENTER: a single open matte-black notebook with two abstract bullet-point lines drawn in gold ink #D4AF37 — just abstract scribble lines, no legible words. Next to it, a thin gold pen #D4AF37 resting diagonally. In the upper-right corner, very small: the ceramic coffee mug. Radial warm golden glow centered on the notebook fading to deep black. Camera at 45° angle, shallow depth of field, film grain. Top 35% empty deep black for headline overlay. Mood: focused, intentional, editorial. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "resuelve directamente el error presentado en slide-03",
+        "connectsToNext": "introduce el segundo error, ritmo continuo error-fix",
+        "narrativeLink": "insight accionable: el copy específico genera más conversión que el copy amplio"
+      }
+    },
+    {
+      "id": "slide-05",
+      "filename": "slide-05-error-02.png",
+      "narrativeBeat": "tension",
+      "headline": "Error #2: publicar para todos y vender a nadie",
+      "body": "Si tu audiencia no está cualificada, puedes tener miles de seguidores sin una venta.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": true,
+      "characterHint": "Alexander, mismas características físicas, polo negro, cadena plateada, ángulo 3/4, mano izquierda abierta extendida hacia la cámara como haciendo énfasis, expresión de advertencia calmada y directa, mirada a cámara",
+      "platformBadges": [],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Cinematic portrait. Deep black #0A0A0A background, radial warm golden glow #D4AF37 behind subject. Alexander — hombre latinoamericano 35-42 años, tez morena clara, pelo negro corto con canas en sienes, barba corta con canas, cadena plateada, polo negro matte — ángulo 3/4 right-facing, plano medio hasta pecho, mano izquierda extendida abierta hacia la cámara enfatizando el punto, mirada directa a cámara, expresión tranquila pero seria de advertencia. Camera-left warm 3-point cinema lighting, golden rim light #D4AF37 envolviendo mandíbula derecha y hombro. En el ángulo inferior del frame: la taza cerámica de café parcialmente visible. Top 35% empty deep black for overlay. Shallow DOF, film grain. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "Alexander reaparece con nueva tensión, continuidad de paleta y luz",
+        "connectsToNext": "slide siguiente da el fix práctico del problema de cualificación",
+        "narrativeLink": "segundo golpe de tensión: seguidores sin cualificación = esfuerzo sin retorno"
+      }
+    },
+    {
+      "id": "slide-06",
+      "filename": "slide-06-fix-02.png",
+      "narrativeBeat": "insight",
+      "headline": "Cualifica con contenido, no con filtros",
+      "body": "Publica para un problema concreto. El que lo tiene, se para. El que no, pasa. Eso es cualificación natural.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": false,
+      "platformBadges": [],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Abstract editorial visual. Deep black #0A0A0A background. CENTER: three abstract vertical rectangular blocks or columns of different heights in muted gray #3D3D3C — the tallest one on the right is highlighted with a warm golden glow #D4AF37 and a thin gold border, representing the qualified segment standing out. Small abstract figure silhouettes (just simple oval heads, no faces) in varying sizes scattered around the blocks — most in muted gray, one highlighted in gold next to the tallest block. Radial golden glow centered behind the tallest block. Small ceramic coffee mug visible at bottom-left edge. Top 35% empty deep black for overlay. Shallow DOF, film grain, editorial minimalist. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "resuelve el problema de audiencia no cualificada del slide-05",
+        "connectsToNext": "introduce el tercer y último error",
+        "narrativeLink": "insight de sistema: el contenido específico actúa como filtro natural"
+      }
+    },
+    {
+      "id": "slide-07",
+      "filename": "slide-07-error-03.png",
+      "narrativeBeat": "tension",
+      "headline": "Error #3: vender antes de que te conozcan",
+      "body": "Nadie te dice que en Instagram la venta es el resultado de la confianza, no el punto de partida.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": false,
+      "platformBadges": [],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Conceptual editorial composition. Deep black #0A0A0A background. CENTER: a closed matte-black door with a thin golden keyhole #D4AF37 that emits a narrow beam of warm golden light through the crack. In front of the door, on the floor: a small abstract shopping bag silhouette in muted gray trying to enter — the door is clearly closed to it. The warm golden glow comes exclusively from the keyhole crack. Mood: metaphor of trust being the key to sales, not the sale being the entry point. Small ceramic coffee mug at lower right edge, barely visible. Top 35% empty deep black for overlay. Shallow DOF, film grain, cinematic. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "transición sin personaje, continuidad de paleta y recurringProp",
+        "connectsToNext": "Alexander reaparece en slide-08 para dar el sistema concreto",
+        "narrativeLink": "tercer golpe de tensión: la venta prematura quema la relación antes de empezar"
+      }
+    },
+    {
+      "id": "slide-08",
+      "filename": "slide-08-fix-03.png",
+      "narrativeBeat": "insight",
+      "headline": "El sistema de confianza que sí vende",
+      "body": "Educa 3 semanas, muestra resultado real 1 semana, ofrece. A la final, la confianza es el producto.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": true,
+      "characterHint": "Alexander, mismas características físicas, polo negro, cadena plateada, frontal a cámara, plano medio, mano derecha con dedo índice apuntando hacia arriba como explicando el sistema, expresión de autoridad calmada y confiada, leve sonrisa genuina",
+      "platformBadges": [],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Cinematic authoritative portrait. Deep black #0A0A0A background with the strongest golden radial glow #D4AF37 of the carousel — this is the key insight slide. CENTER: Alexander — hombre latinoamericano 35-42 años, tez morena clara con matices oliva, pelo negro corto con canas en sienes, barba corta bien recortada con canas, cadena plateada, polo negro matte — frontal a cámara, plano medio hasta cintura, dedo índice de la mano derecha apuntando hacia arriba, leve sonrisa genuina y expresión de autoridad tranquila y confiada. Camera-left warm 3-point cinema lighting, golden rim light #D4AF37 muy pronunciado envolviendo mandíbula y hombro izquierdo — la imagen más luminosa del carrusel. La taza cerámica de café visible en la superficie matte negra a su derecha, nivel cadera. Top 30% empty deep black for headline overlay. Shallow DOF, film grain, -15% saturation except gold tones. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "Alexander reaparece para cerrar el tercer error con la solución más importante",
+        "connectsToNext": "slide siguiente presenta el caso concreto que valida el sistema",
+        "narrativeLink": "insight culminante: la cadencia educar-mostrar-ofrecer como sistema repetible"
+      }
+    },
+    {
+      "id": "slide-09",
+      "filename": "slide-09-prueba.png",
+      "narrativeBeat": "proof",
+      "headline": "Esto funciona porque los números no mienten",
+      "body": "Cuentas que aplican los 3 fixes: copy específico, audiencia cualificada, confianza primero — multiplican sus ventas sin subir el presupuesto de publicidad.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": false,
+      "platformBadges": ["instagram"],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Editorial data visualization composition. Deep black #0A0A0A background. CENTER: three abstract upward bar charts in a row — left bar muted gray #3D3D3C short, center bar medium height in warm gold #D4AF37 with glow, right bar the tallest also in gold #D4AF37 with the strongest warm radial glow behind it. Above the bars: three abstract Instagram-style rounded square frames in muted gold outline, representing content posts. Below each bar: a thin horizontal base line in muted gray. The golden glow intensifies left-to-right showing progression. Small ceramic coffee mug at bottom-left edge of frame. Top 35% empty deep black for overlay. Film grain, shallow DOF, editorial minimalist dark. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "consolida los 3 fixes con validación visual de progresión",
+        "connectsToNext": "prepara el CTA con prueba social implícita",
+        "narrativeLink": "proof beat: el sistema funciona, la evidencia es el patrón consistente"
+      }
+    },
+    {
+      "id": "slide-10",
+      "filename": "slide-10-cta.png",
+      "narrativeBeat": "cta",
+      "headline": "Link en bio, te explico más",
+      "body": "Si quieres que lo trabajemos juntos, ya sabes dónde encontrarme.",
+      "signature": "@infiny",
+      "colorScheme": "dark",
+      "characterAppears": false,
+      "platformBadges": [],
+      "visualPrompt": "ABSOLUTELY NO TEXT, NO LETTERS, NO NUMBERS rasterized. Minimal elegant closing composition. Deep black #0A0A0A background. CENTER: the ceramic coffee mug — the recurring prop of the carousel — now prominently featured alone, with soft steam rising, surrounded by the warmest golden radial glow #D4AF37 of the series, as if under a spotlight. The mug sits on a matte-black surface with a subtle reflection. Behind and slightly to the upper right: a thin gold horizontal line #D4AF37 acting as a visual separator. The composition is intentionally simple, clean, quiet — an invitation to continue the conversation. Top 35% empty deep black for CTA overlay. Camera front-facing at slight 15° tilt down, macro-ish with shallow DOF, warm film grain. Fotografía editorial cinematográfica ultra premium 4K. 4:5 vertical.",
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": null,
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": "Link en bio",
+          "elements": [
+            { "type": "accent-bar", "position": "bottom-signature-above", "widthRatio": 0.057, "color": "gold" }
+          ]
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": [],
+      "continuity": {
+        "connectsToPrevious": "el recurringProp protagoniza solo el cierre — loop visual cerrado con el setup",
+        "narrativeLink": "closed loop: la taza que estuvo presente en todo el carrusel cierra la historia"
+      }
+    }
+  ]
+}

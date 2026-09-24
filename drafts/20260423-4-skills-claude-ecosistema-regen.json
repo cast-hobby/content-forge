@@ -1,0 +1,45 @@
+{
+  "concept": "4-skills-claude-ecosistema",
+  "slug": "4-skills-claude-ecosistema",
+  "date": "20260423",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 2,
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · golden rim light at #D4AF37 · subtle fill from right",
+    "recurringProp": "matte black laptop with glowing screen on dark desk surface",
+    "mood": "developer boutique editorial · quiet authority · late night build session",
+    "backgroundFamily": "deep black textured surface · dark concrete or matte desk · near-zero ambient"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterHint": "IDENTITY-FIRST MANDATORY: Latin American Colombian man, late 30s, olive-warm medium BROWN skin tone (NOT pale, NOT caucasian, NOT european) · dark hair with CLEARLY VISIBLE salt-and-pepper silver-gray streaks at BOTH temples (prominent, not subtle) · short trimmed full beard with visible gray-white streaks mixed throughout the facial hair (not clean-shaven, not dark-only) · robust stocky build broad shoulders (NOT slim, NOT athletic) · silver figaro chain necklace VISIBLE at collar over dark polo · wearing solid matte black polo shirt · Frontal slight 3/4 left angle, direct serious authoritative gaze into camera, right palm open holding small glowing gold icon — refs [1, 5, 6, 7]. CRITICAL: face must match refs — if uncertain, prioritize olive-brown skin + gray temples + gray beard + chain.",
+      "concept": "IDENTITY-FIRST editorial portrait — this is the hero shot, facial match to references is ZERO-TOLERANCE priority. Latin American Colombian man, late 30s, olive-warm medium BROWN skin tone (NOT pale, NOT light), dark hair with prominent visible salt-and-pepper silver-gray at both temples, short trimmed full beard with visible gray streaks throughout, robust stocky build, silver figaro chain visibly resting over collar. Wearing solid matte black polo. Positioned LOWER-RIGHT quadrant of frame (subject occupies bottom 55% of frame, RIGHT half of frame) — TOP 45% of frame is COMPLETELY EMPTY deep black negative space (required for overlay headline). He holds a small glowing gold square icon in his open right palm at chest level, warm golden glow #D4AF37 emanating from the icon. Background: deep black #050505 textured wall, subtle dark concrete texture. Camera-left warm directional rim light at #D4AF37 wraps his left jaw and shoulder edge, strong definition. Right side soft fill, near-zero ambient elsewhere. Shallow DOF, 35mm portrait, subtle film grain, matte finish. NO TEXT anywhere in image. 4:5 vertical composition.",
+      "textPayload": null
+    },
+    {
+      "id": "slide-07",
+      "filename": "slide-07-cta.png",
+      "narrativeBeat": "cta",
+      "character": true,
+      "characterHint": "IDENTITY-FIRST MANDATORY: Latin American Colombian man, late 30s, olive-warm medium BROWN skin tone (NOT pale, NOT caucasian) · dark hair with CLEARLY VISIBLE salt-and-pepper silver-gray streaks at BOTH temples · short trimmed full beard with gray-white streaks throughout · robust stocky build · silver figaro chain necklace VISIBLE at collar · solid black polo · Right-of-center, direct warm confident gaze into camera, slight forward lean, right hand holds smartphone screen angled toward viewer — refs [1, 5, 7]. CRITICAL: face must match refs. Subject must occupy ONLY the RIGHT 55% of the frame. LEFT 45% must be COMPLETELY EMPTY dark negative space.",
+      "concept": "IDENTITY-FIRST CTA portrait — facial match to refs is ZERO-TOLERANCE. Latin American Colombian man, late 30s, olive-warm medium BROWN skin tone, dark hair with prominent visible silver-gray at both temples, short trimmed full beard with gray streaks throughout, robust stocky build, silver figaro chain visibly resting over collar. Wearing matte black polo. STRICTLY positioned in the RIGHT 55% of the frame — the LEFT 45% of the frame must be COMPLETELY EMPTY deep black #050505 negative space (mandatory for overlay headline, no subject, no prop, no light spill into that zone). He holds a modern smartphone vertically in his right hand at mid-chest height, screen slightly angled toward camera showing a faint dark UI with gold-colored code or JSON text visible. Warm confident expression, slight forward lean, direct gaze. Background: deep black #050505 textured wall behind him. Camera-left warm directional rim light at #D4AF37 wraps his left jaw and shoulder, the light MUST NOT spill into the left 45% empty zone. Right side soft fill. Shallow DOF, 35mm, subtle film grain, matte finish. NO TEXT anywhere in image. 4:5 vertical composition.",
+      "textPayload": null
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.1",
+    "generatedBy": "manual-regen-post-qa",
+    "generatedAt": "2026-04-23T21:25:00.000Z",
+    "brandConfig": "brand.config.json",
+    "handle": "@alexemprendee",
+    "brandName": "Alexander Cast",
+    "regenReason": "visual-qa flagged identity drift + safe zone failures on slide-01 and slide-07"
+  }
+}

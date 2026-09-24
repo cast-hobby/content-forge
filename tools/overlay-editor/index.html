@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overlay Editor PRO · Content Forge</title>
+
+  <!-- Google Fonts: biblioteca amplia para diseño -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700;800;900&family=Josefin+Sans:wght@300;400;600&family=Lora:wght@400;600&family=Manrope:wght@400;600;700;800&family=Montserrat:wght@300;400;500;700;900&family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;500;700;900&family=Playfair+Display:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;600;800&family=Poppins:wght@300;400;500;700;900&family=Raleway:wght@400;700;900&family=Sora:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&family=Syne:wght@400;700;800&family=Unbounded:wght@400;700;800&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="app-header">
+    <div class="brand">
+      <span class="asterisk">✲</span>
+      <span>OVERLAY EDITOR <b>PRO</b></span>
+    </div>
+    <div class="top-center">
+      <select id="carousel-select">
+        <option value="">— Carga un carrusel —</option>
+      </select>
+      <button id="slide-prev" title="Slide anterior">◀</button>
+      <span id="slide-indicator" class="muted">—</span>
+      <button id="slide-next" title="Siguiente slide">▶</button>
+      <button id="btn-preview-toggle" style="display:none" title="Volver al modo edición en vivo">✏ Editar</button>
+    </div>
+    <div class="toolbar">
+      <div class="zoom-group">
+        <button id="zoom-out" title="Zoom −">−</button>
+        <span id="zoom-value">100%</span>
+        <button id="zoom-in" title="Zoom +">+</button>
+        <button id="zoom-fit" title="Ajustar">⛶</button>
+      </div>
+      <button id="btn-undo" title="Deshacer (Ctrl+Z)">↶</button>
+      <button id="btn-redo" title="Rehacer (Ctrl+Y)">↷</button>
+      <button id="btn-save" class="primary" title="Guardar overlay-copy.json y layout-plan.json">💾 Guardar</button>
+      <button id="btn-compose" class="accent" title="Ejecutar npm run compose">▶ Compose</button>
+      <a id="btn-download" class="accent" style="display:none;text-decoration:none;padding:0 10px;line-height:28px;border-radius:4px;font-size:12px;font-weight:600" title="Descargar imagen final (todos los slides)">⬇ Descargar</a>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <!-- LEFT TOOLBAR (icon buttons) -->
+    <nav class="tool-rail">
+      <button class="tool" data-tool="select" title="Seleccionar (V)">◆</button>
+      <button class="tool" data-tool="text" title="Texto (T)">T</button>
+      <button class="tool" data-tool="block" title="Block / Rectángulo (R)">▮</button>
+      <button class="tool" data-tool="scrim" title="Scrim gradient (S)">▨</button>
+      <button class="tool" data-tool="image" title="Imagen / Logo (I)">🖼</button>
+      <hr />
+      <button class="tool" data-tool="freetext" title="Texto libre (F)" style="font-size:12px;font-weight:900;">F</button>
+      <button class="tool" data-tool="circle" title="Círculo / Elipse (C)">●</button>
+      <button class="tool" data-tool="line" title="Línea (L)" style="font-size:18px;">╱</button>
+      <button class="tool" data-tool="number" title="Número decorativo (N)" style="font-size:10px;font-weight:900;">01</button>
+      <button class="tool" data-tool="quote" title="Cita con barra (Q)" style="font-size:14px;">❝</button>
+      <button class="tool" data-tool="richtext" title="Texto rico / mixto (X)" style="font-size:10px;font-weight:900;">Aa+</button>
+      <hr />
+      <button class="tool" id="btn-align-left" title="Alinear izquierda">◧</button>
+      <button class="tool" id="btn-align-center" title="Alinear centro">⊟</button>
+      <button class="tool" id="btn-align-right" title="Alinear derecha">◨</button>
+    </nav>
+
+    <!-- SIDEBAR LIBRARY -->
+    <aside class="library">
+      <div class="tabs">
+        <button class="tab active" data-tab="slides">Slides</button>
+        <button class="tab" data-tab="layers">Capas</button>
+        <button class="tab" data-tab="assets">Assets</button>
+        <button class="tab" data-tab="library">📚 Lib</button>
+        <button class="tab" data-tab="ai">✨ IA</button>
+        <button class="tab" data-tab="fonts">Fuentes</button>
+      </div>
+
+      <!-- TAB: slides -->
+      <div class="tab-content active" data-tab-content="slides">
+        <ul id="slide-list"></ul>
+      </div>
+
+      <!-- TAB: layers -->
+      <div class="tab-content" data-tab-content="layers">
+        <ul id="layer-list"></ul>
+      </div>
+
+      <!-- TAB: assets -->
+      <div class="tab-content" data-tab-content="assets">
+        <div id="upload-dropzone" class="dropzone">
+          <p><b>Arrastra PNGs aquí</b><br/>o click para subir</p>
+          <input type="file" id="upload-input" multiple accept="image/*" hidden>
+        </div>
+        <div id="asset-list" class="asset-grid"></div>
+      </div>
+
+      <!-- TAB: library (Simple Icons + Iconify) -->
+      <div class="tab-content" data-tab-content="library">
+        <div class="lib-tabs">
+          <button class="lib-tab active" data-lib="simple">Logos</button>
+          <button class="lib-tab" data-lib="iconify">Iconos</button>
+        </div>
+        <input id="lib-search" type="text" placeholder="Ej: claude, n8n, instagram, github..." />
+        <div id="lib-color-row">
+          <label>Color:</label>
+          <input id="lib-color" type="color" value="#D4AF37" />
+          <input id="lib-color-text" type="text" value="D4AF37" maxlength="6" />
+        </div>
+        <div id="lib-results" class="asset-grid"></div>
+        <div id="lib-empty" class="muted" style="padding:20px; text-align:center;">
+          Escribe al menos 2 caracteres para buscar.<br/>
+          <small>Logos: Simple Icons (3000+ marcas)</small><br/>
+          <small>Iconos: Iconify (200k+ iconos)</small>
+        </div>
+      </div>
+
+      <!-- TAB: AI generate -->
+      <div class="tab-content" data-tab-content="ai">
+        <p class="muted" style="margin-bottom:10px">
+          Genera imágenes premium (WaveSpeed flux-dev / OpenAI fallback).<br/>
+          Se guardan en <code>brand-assets/uploads/</code>
+        </p>
+        <label>Prompt</label>
+        <textarea id="ai-prompt" placeholder="Ej: carrusel sobre n8n automatizando workflows con Supabase, fondo dark premium..." rows="5"></textarea>
+
+        <!-- Logos detectados automáticamente -->
+        <div id="ai-platform-bar" style="margin-top:8px; display:none">
+          <label style="font-size:10px; text-transform:uppercase; letter-spacing:1px; color:var(--muted)">Plataformas detectadas</label>
+          <div id="ai-detected-logos" style="display:flex; flex-wrap:wrap; gap:6px; margin-top:4px;"></div>
+          <label style="display:flex; align-items:center; gap:6px; margin-top:6px; font-size:11px; cursor:pointer;">
+            <input type="checkbox" id="ai-embed-logos" checked />
+            Incrustar logos en la imagen (franja inferior)
+          </label>
+        </div>
+
+        <div class="row" style="margin-top:8px;">
+          <div>
+            <label>Tamaño</label>
+            <select id="ai-size">
+              <option value="1024x1280">1024×1280 (4:5)</option>
+              <option value="1024x1024">1024×1024 (1:1)</option>
+              <option value="1280x1024">1280×1024 (5:4)</option>
+            </select>
+          </div>
+          <div>
+            <label>Calidad</label>
+            <select id="ai-quality">
+              <option value="high">high (premium)</option>
+              <option value="medium">medium</option>
+              <option value="low">low</option>
+            </select>
+          </div>
+        </div>
+        <button id="ai-generate-btn" class="primary" style="margin-top:10px;width:100%">Generar imagen</button>
+        <div id="ai-results" class="asset-grid" style="margin-top:14px"></div>
+      </div>
+
+      <!-- TAB: fonts -->
+      <div class="tab-content" data-tab-content="fonts">
+        <input id="font-search" type="text" placeholder="Buscar fuente..." />
+        <div class="font-cat-row">
+          <button class="font-cat active" data-cat="all">Todas</button>
+          <button class="font-cat" data-cat="display">Display</button>
+          <button class="font-cat" data-cat="sans">Sans</button>
+          <button class="font-cat" data-cat="serif">Serif</button>
+        </div>
+        <input id="font-preview-text" type="text" value="Claude mató a n8n" placeholder="Texto preview..." />
+        <ul id="font-list" class="font-list"></ul>
+      </div>
+    </aside>
+
+    <!-- CANVAS AREA -->
+    <section class="canvas-wrap" id="canvas-wrap">
+      <div id="canvas-outer">
+        <div id="canvas" class="canvas">
+          <img id="slide-image" src="" alt="slide" />
+          <div id="slide-overlay-svg" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;display:none;overflow:hidden;"></div>
+          <div id="layer"></div>
+          <div id="guides"></div>
+        </div>
+      </div>
+      <div class="canvas-footer">
+        <span id="canvas-meta" class="muted">Selecciona un carrusel para comenzar</span>
+        <span id="drop-hint" class="muted">💡 V=sel · T=texto · R=rect · S=scrim · I=imagen · F=libre · C=círculo · L=línea · N=número · Q=cita · X=texto-rico · Ctrl+D=dup · Ctrl+C/V=cop/peg · Del=borrar · Ctrl+Z=deshacer</span>
+      </div>
+    </section>
+
+    <!-- RIGHT PROPS PANEL -->
+    <aside class="props">
+      <div class="panel-header">
+        <h3 id="props-title">PROPIEDADES</h3>
+      </div>
+      <div id="props-empty" class="muted">Sin selección.</div>
+      <div id="props-form" style="display:none"></div>
+    </aside>
+
+  </main>
+
+  <div id="status" class="status"></div>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

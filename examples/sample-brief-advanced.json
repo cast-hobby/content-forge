@@ -1,0 +1,127 @@
+{
+  "_comment": "Brief de ejemplo con el schema expandido: sceneSeed compartido, narrativeBeat por slide, continuity entre slides, dataPoints citados y brandsReferenced para logo overlay. Este es el tipo de brief que content-forge-brief-architect produce tras invocar al researcher.",
+  "concept": "3-errores-lanzamiento-dtc",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "pillar": "educativo",
+  "firma": "Laura",
+  "handle_publico": "@lauramendezco",
+  "hook_line_1": "El 63% de los DTC no pasa de los primeros 12 meses. Estos 3 errores explican casi todos los casos.",
+  "topic_summary": "3 errores comunes + 3 fixes prácticos sobre lanzamientos DTC en Latam, con datos Shopify 2025 y casos Duolingo y Allbirds.",
+  "researchFile": "drafts/20260423-3-errores-lanzamiento-dtc-research.md",
+  "dopamine_check": {
+    "pattern_interrupt": true,
+    "curiosity_gap": true,
+    "reframe": true,
+    "micro_payoff": true,
+    "closed_loop": true,
+    "cta_low_friction": true
+  },
+  "sceneSeed": {
+    "dominantColor": "#C27B3E",
+    "secondaryColor": "#1A1A1A",
+    "lightAngle": "camera-left warm afternoon · rim light in #C27B3E",
+    "lightIntensity": "soft directional · crushed deep shadows · preserved highlights",
+    "recurringProp": "ceramic espresso cup on linen napkin",
+    "mood": "late afternoon editorial · boutique studio · quiet luxury",
+    "cameraPreference": "35mm mid-shot · shallow DOF · film grain · -15% saturation",
+    "wardrobeTone": "neutral warm layered · linen and wool textures · matte tones",
+    "backgroundFamily": "textured off-white plaster walls · warm-toned wood accents"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-portada.png",
+      "narrativeBeat": "hook",
+      "concept": "Mid-shot of a founder at a small boutique desk late afternoon, warm directional light from camera-left casting a long shadow behind an espresso cup. She leans on a hand, thinking. Negative space at the top third for a large headline overlay.",
+      "composition": "Top 32% empty. Subject anchored in the lower right rule-of-thirds cross.",
+      "continuity": {
+        "connectsToNext": "same desk, same light, camera pulls back to reveal the wider studio"
+      },
+      "character": true,
+      "characterHint": "three-quarter turn toward camera, right hand on temple in a 'thinking' pose, looking slightly off-camera into a soft light source",
+      "dataPoints": [],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-02",
+      "filename": "slide-02-contexto.png",
+      "narrativeBeat": "setup",
+      "concept": "Wide editorial photo of the same boutique studio now seen from further back, the espresso cup visible on a wooden desk in the mid-ground, a chair slightly pushed out as if someone just left. Warm afternoon light still spilling through a window on camera-left.",
+      "composition": "Centered horizontal composition, generous negative space above the cup for a data headline overlay.",
+      "continuity": {
+        "connectsToPrevious": "camera pulled back, same scene from slide 01 now reveals the wider space",
+        "connectsToNext": "zoom into a detail of the desk — we'll see the notebook"
+      },
+      "character": false,
+      "dataPoints": [
+        {
+          "claim": "63% de los DTC latam no supera los 12 meses",
+          "source_url": "https://shopify.com/research/dtc-latam-2025",
+          "source_name": "Shopify Research 2025",
+          "confidence": "high",
+          "uso_en_slide": "headline number"
+        }
+      ],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-03",
+      "filename": "slide-03-error-1.png",
+      "narrativeBeat": "tension",
+      "concept": "Overhead flat lay of a worn linen-paper notebook open on the desk. Hand-drawn funnel sketch faded in pencil, a half-empty espresso cup at the edge, an unlabeled bottle of ink. Warm afternoon light from camera-left, the recurring espresso cup anchors the composition.",
+      "composition": "Top-down 90°. Notebook dominates the lower half. Top 40% empty for eyebrow 'ERROR 01' + headline.",
+      "continuity": {
+        "connectsToPrevious": "zoom-in of the desk from slide 02 — the notebook was in the previous frame but not visible",
+        "connectsToNext": "same desk, subject returns and writes in the notebook"
+      },
+      "character": false,
+      "dataPoints": [],
+      "brandsReferenced": []
+    },
+    {
+      "id": "slide-04",
+      "filename": "slide-04-fix-1.png",
+      "narrativeBeat": "insight",
+      "concept": "Mid-shot of the founder writing in the notebook from slide 03, the espresso cup present in the frame, soft smile as if she just cracked a thought. Same warm directional light from camera-left.",
+      "composition": "Subject offset to the right third, notebook at the center, top-left 30% empty for eyebrow 'HAZLO ASÍ' + headline.",
+      "continuity": {
+        "connectsToPrevious": "subject is back at the desk we saw empty in 02 and zoomed into in 03",
+        "connectsToNext": "she looks up from the notebook toward an unseen screen or audience"
+      },
+      "character": true,
+      "characterHint": "seated, slight lean forward, pen in right hand, left hand resting on the notebook's open spine",
+      "dataPoints": [
+        {
+          "claim": "Pre-lanzamientos con pre-registro lograron 40k signups antes de abrir la tienda",
+          "source_url": "https://investors.duolingo.com/news-releases",
+          "source_name": "Duolingo investor letter",
+          "confidence": "medium",
+          "uso_en_slide": "ejemplo concreto del fix"
+        }
+      ],
+      "brandsReferenced": [
+        {
+          "name": "Duolingo",
+          "domain": "duolingo.com",
+          "context": "pre-registro 40k signups",
+          "logoPosition": "bottom-right",
+          "logoSize": "small"
+        }
+      ]
+    },
+    {
+      "id": "slide-05",
+      "filename": "slide-05-cta.png",
+      "narrativeBeat": "cta",
+      "concept": "Quiet editorial close-up of the espresso cup now empty, the linen napkin folded neatly beside it, afternoon light fading. A soft brass outline of the logo-sized element on the plaster wall (no readable text). Wabi-sabi mood, end of the session.",
+      "composition": "Square composition within the 4:5. Cup left-third, negative space right 2/3 for a closing line + logo in post-production.",
+      "continuity": {
+        "connectsToPrevious": "same light, same desk, the subject has left and only the trace of the scene remains"
+      },
+      "character": false,
+      "dataPoints": [],
+      "brandsReferenced": []
+    }
+  ]
+}

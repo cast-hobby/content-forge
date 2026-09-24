@@ -1,0 +1,12 @@
+{
+  "name": "overlay-editor",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  },
+  "description": "UI editor para acomodar overlays (headlines, bodies, blocks, logos, chips) sobre los slides raw. Drag-and-drop, edita textos, exporta a overlay-copy.json + layout-plan.json.",
+  "author": "Alexander Cast"
+}

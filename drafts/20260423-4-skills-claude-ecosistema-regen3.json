@@ -1,0 +1,107 @@
+{
+  "concept": "4-skills-claude-ecosistema",
+  "slug": "4-skills-claude-ecosistema",
+  "date": "20260423",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 3,
+  "pillar": "educativo",
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · golden rim light at #D4AF37 · subtle fill from right",
+    "lightIntensity": "soft directional · deep crushed shadows · preserved warm highlights · low ambient",
+    "recurringProp": "matte black laptop with glowing screen on dark desk surface",
+    "mood": "developer boutique editorial · quiet authority · late night build session",
+    "cameraPreference": "35mm mid-shot · shallow DOF · subtle film grain · desaturated except gold tones",
+    "wardrobeTone": "solid black polo · clean matte dark",
+    "backgroundFamily": "deep black textured surface · dark concrete or matte desk · near-zero ambient"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterPose": "tight mid-chest framing, subject shown from chest up, shoulders visible, 3/4 left angle, direct serious gaze into camera, right palm open at chest level holding a small glowing matte gold square icon, warm golden glow emanating from icon",
+      "characterHint": "tight mid-chest crop — chest up only, shoulders at bottom of frame, palm open holding glowing gold icon at chest level, serious authoritative direct gaze, slight 3/4 left angle — refs [1, 5, 6, 7]",
+      "concept": "Dark editorial composition. A person framed TIGHT from chest up, wearing a solid matte black polo. Subject positioned in the LOWER half of the frame (bottom 55%) — their shoulders touch the bottom edge and their head is roughly at the 40% mark from top. CRITICAL: TOP 50% of the frame is COMPLETELY EMPTY deep black #050505 negative space — no head, no hair, no shoulders, no light spill. The subject's right palm is open at mid-chest level holding a small glowing matte gold square icon with warm #D4AF37 golden glow emanating from it. Background: deep black textured wall, subtle dark concrete texture, no gradient in the top empty half. Camera-left warm directional rim light at #D4AF37 wraps the left jaw and shoulder edge. Shallow DOF, 35mm portrait, subtle film grain. Slight 3/4 left angle. Direct serious gaze into camera. NO TEXT anywhere in image. 4:5 vertical composition.",
+      "textPayload": null
+    },
+    {
+      "id": "slide-04",
+      "filename": "slide-04-skill-02.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "Dark editorial product shot. A matte black widescreen monitor angled slightly toward camera sits on a dark desk surface. The screen displays a Claude Code agent interface: on the left panel a PNG thumbnail of a dark editorial carousel slide is visible, on the right panel a structured layout plan JSON with gold highlighted keys like 'textColor', 'position', 'safeZone', 'shadow', 'glow'. Thin #D4AF37 golden ruler/grid lines overlay the thumbnail showing safe zones and alignment guides. Beside the monitor: a minimal notebook and a gold metallic pen. Behind the monitor: subtle soft focused deep black texture with a warm directional rim light from camera-left creating a golden glow on the monitor edge. Top 40% clear dark space for headline. No text in image except the faint UI on screen. 4:5 vertical.",
+      "composition": "Monitor center-right · left panel image thumbnail + right panel layout JSON · golden ruler overlay · top 40% empty · dark backdrop",
+      "continuity": {
+        "connectsToPrevious": "desk environment and monitor prop extend from slide-03 · same lighting direction",
+        "connectsToNext": "monitor prop remains in slide-05 showing a different tool in action",
+        "narrativeLink": "second concrete proof — from brief generation to image-aware layout decisions"
+      },
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "02 LAYOUT ARCHITECT",
+            "style": "display-large",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 1
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null,
+          "elements": []
+        }
+      }
+    },
+    {
+      "id": "slide-05",
+      "filename": "slide-05-skill-03.png",
+      "narrativeBeat": "insight",
+      "character": false,
+      "concept": "Dark editorial product shot. A matte black widescreen monitor angled slightly on a dark desk shows a quality-check dashboard: a grid of 8 thumbnail slides in a 2x4 layout, each with a small status badge beside it (3 with a gold checkmark, 2 with a gold warning triangle, 1 with a gold X mark — abstract glyphs, no readable micro-text). A thin #D4AF37 golden line highlights one of the flagged thumbnails. Beside the monitor on the desk: a compact dark magnifying glass with a golden rim, and a small stack of matte black prints. Camera-left warm directional rim light at #D4AF37. Top 40% clear dark space for headline. Background deep black textured. 4:5 vertical.",
+      "composition": "Monitor center · QA grid 2x4 with status glyphs · magnifying glass prop · top 40% empty · deep black backdrop",
+      "continuity": {
+        "connectsToPrevious": "same monitor and desk prop as slide-04 but now showing QA grid instead of layout plan",
+        "connectsToNext": "pulls back from the workstation to show the final meta-skill in slide-06",
+        "narrativeLink": "third proof — quality gate before publishing"
+      },
+      "textPayload": {
+        "margin": "editorial",
+        "renderInImage": {
+          "headline": {
+            "text": "03 VISUAL QA",
+            "style": "display-large",
+            "position": "top-left",
+            "color": "dark",
+            "case": "uppercase",
+            "maxLines": 1
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right",
+          "microCopy": null,
+          "elements": []
+        }
+      }
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.2",
+    "generatedBy": "manual-regen3-real-skills",
+    "generatedAt": "2026-04-23T21:45:00.000Z",
+    "brandConfig": "brand.config.json",
+    "handle": "@alexemprendee",
+    "brandName": "Alexander Cast",
+    "regenReason": "User feedback: (1) replace invented skills (UGC Script Builder, Jarvis Workflow Planner) with real skills from content-forge repo (Layout Architect, Visual QA). (2) 4th attempt on slide-01 with aggressive top-50%-empty composition. (3) Phase A now uses generic placeholder thanks to sanitizer — identity comes from Gemini swap with refs."
+  }
+}

@@ -3,7 +3,7 @@
 //
 // Hace ~10 preguntas interactivas al usuario y genera:
 //   - brand.config.json     (la fuente de verdad de la marca)
-//   - .env.local            (con GEMINI_API_KEY)
+//   - .env.local            (con OPENAI_API_KEY y GEMINI_API_KEY)
 //   - brand-assets/         (preparada para logos y fotos del personaje)
 //
 // Si el usuario activa character consistency, al final invoca analyze-character.mjs
@@ -72,8 +72,14 @@ function normalizeHandle(s) {
   return `@${cleaned}`;
 }
 
-function isValidApiKey(s) {
+function isValidGeminiKey(s) {
   return /^AIzaSy[A-Za-z0-9_-]{33}$/.test(s.trim());
+}
+
+function isValidOpenAIKey(s) {
+  const cleaned = s.trim();
+  // Soporta tanto sk-... clásicas como sk-proj-... (project-scoped) y sk-svcacct-... (service account).
+  return /^sk-[A-Za-z0-9_-]{20,}$/.test(cleaned);
 }
 
 function contrastRatio(hex1, hex2) {
@@ -306,15 +312,50 @@ async function main() {
     printInfo(`Te pediré las fotos en un momento.`);
   }
 
-  // 10. API key de Gemini
-  printSection(10, 10, "API key de Google Gemini");
-  printInfo("Obténla gratis en: https://aistudio.google.com/apikey");
-  printInfo("Empieza con 'AIzaSy...' y tiene 39 caracteres en total.");
-  const q10 = await prompts({
+  // 10. API keys (WaveSpeed + OpenAI + Gemini)
+  printSection(10, 10, "API keys — WaveSpeed (premium) + OpenAI (fallback) + Gemini (character swap)");
+  printInfo("Content Forge usa generación de imágenes en 2 proveedores:");
+  printInfo("  · WaveSpeed flux-dev (RECOMENDADO) — calidad premium, rápido.");
+  printInfo("  · OpenAI gpt-image-2 — fallback si no tienes WaveSpeed.");
+  printInfo("  · Gemini 2.5 Flash Image — swap de personaje con tus refs.");
+  printInfo("");
+  printInfo("WaveSpeed (recomendado): obtén tu key en https://wavespeed.ai");
+  printInfo("  Pulsa Enter para omitir si usarás OpenAI como proveedor.");
+  const q10ws = await prompts({
+    type: "password",
+    name: "apiKey",
+    message: "Pega tu WAVESPEED_API_KEY (o Enter para omitir):",
+  });
+
+  printInfo("");
+  printInfo("OpenAI (fallback): obtén tu key en https://platform.openai.com/api-keys");
+  printInfo("  IMPORTANTE: verifica tu organización en platform.openai.com/settings/organization/general");
+  printInfo("  (requisito obligatorio de OpenAI para usar gpt-image-2). Pulsa Enter para omitir si usas WaveSpeed.");
+  const q10a = await prompts({
+    type: "password",
+    name: "apiKey",
+    message: "Pega tu OPENAI_API_KEY (o Enter para omitir):",
+  });
+
+  printInfo("");
+  printInfo("Gemini: obtén tu key gratis en https://aistudio.google.com/apikey");
+  printInfo("  Empieza con 'AIzaSy...' y tiene 39 caracteres en total.");
+  const q10b = await prompts({
     type: "password",
     name: "apiKey",
     message: "Pega tu GEMINI_API_KEY:",
-    validate: (v) => isValidApiKey(v) || "Formato inválido (debe ser AIzaSy... de 39 chars)",
+    validate: (v) => isValidGeminiKey(v) || "Formato inválido (debe ser AIzaSy... de 39 chars)",
+  });
+
+  printInfo("");
+  printInfo("Apify (opcional): solo necesario si quieres usar `clone-from-url`");
+  printInfo("  para recrear carruseles virales con tu imagen.");
+  printInfo("  Obtén tu token en https://console.apify.com/account/integrations");
+  printInfo("  Empieza con 'apify_api_...'. Pulsa Enter para omitir.");
+  const q10c = await prompts({
+    type: "password",
+    name: "apiKey",
+    message: "Pega tu APIFY_API_TOKEN (o Enter para omitir):",
   });
 
   // Detectar país + timezone
@@ -401,8 +442,15 @@ async function main() {
   await writeFile(CONFIG_PATH, JSON.stringify(config, null, 2) + "\n", "utf8");
   printSuccess(`brand.config.json escrito en ${CONFIG_PATH}`);
 
-  await writeFile(ENV_PATH, `GEMINI_API_KEY=${q10.apiKey}\n`, "utf8");
-  printSuccess(`.env.local escrito con tu API key`);
+  const envLines = [];
+  if (q10ws?.apiKey) envLines.push(`WAVESPEED_API_KEY=${q10ws.apiKey.trim()}`);
+  if (q10a?.apiKey)  envLines.push(`OPENAI_API_KEY=${q10a.apiKey.trim()}`);
+  envLines.push(`GEMINI_API_KEY=${q10b.apiKey}`);
+  if (q10c?.apiKey)  envLines.push(`APIFY_API_TOKEN=${q10c.apiKey.trim()}`);
+  envLines.push("");
+  await writeFile(ENV_PATH, envLines.join("\n"), "utf8");
+  const providers = [q10ws?.apiKey && "WaveSpeed", q10a?.apiKey && "OpenAI", "Gemini", q10c?.apiKey && "Apify"].filter(Boolean);
+  printSuccess(`.env.local escrito con: ${providers.join(" + ")}`);
 
   // Crear directorios
   await mkdir(join(ROOT, "brand-assets"), { recursive: true });

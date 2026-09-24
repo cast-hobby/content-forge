@@ -1,0 +1,70 @@
+{
+  "_comment": "Brief de 1 slide de prueba — carrusel educativo sobre gpt-image-2 de OpenAI. Slide 01 = portada hook con Alexander integrado en retrato editorial + texto renderizado como parte del diseño.",
+  "concept": "gpt-image-2-intro",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "pillar": "educativo",
+  "firma": "Alexander",
+  "handle_publico": "@alexemprendee",
+  "hook_line_1": "Esta IA ya diseña mejor que un junior. Te explico cómo usarla sin sonar amateur.",
+  "topic_summary": "Carrusel educativo sobre gpt-image-2 de OpenAI: qué es, cómo funciona, para qué sirve, cómo usarlo en tu flujo de contenido como creador.",
+  "sceneSeed": {
+    "dominantColor": "#D4AF37",
+    "secondaryColor": "#0A0A0A",
+    "lightAngle": "camera-left warm directional spotlight · rim light in #D4AF37 on shoulder and jaw",
+    "lightIntensity": "dramatic directional · crushed deep shadows · preserved highlights on skin and wardrobe texture",
+    "recurringProp": "matte black tablet on a linen-covered surface",
+    "mood": "editorial dark studio · quiet authority · late evening boutique",
+    "cameraPreference": "50mm mid-shot · f/2.2 shallow DOF · subtle film grain · -10% saturation",
+    "wardrobeTone": "dark warm neutrals · charcoal wool layer over warm cream linen · matte textures",
+    "backgroundFamily": "textured charcoal plaster wall with a slow vignette toward the corners"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-portada.png",
+      "narrativeBeat": "hook",
+      "concept": "Editorial dark studio portrait of a confident Latin American man in his early 30s, mid-shot from the waist up, standing three-quarter turn toward a warm directional light from camera-left. He holds a matte black tablet at his waist with a muted abstract interface glowing softly on its screen. His gaze is slightly off-camera, calm and deliberate, like a founder mid-conversation with his team. The background is a textured charcoal plaster wall with a slow vignette. Warm rim light catches the edge of his shoulder and jaw, crushed deep shadows fall on the right side.",
+      "composition": "Subject offset to the RIGHT third. The entire LEFT 42% of the frame is intentionally empty shadow space — this is where the main headline typography lives. Top 16% reserved for a small eyebrow label. Bottom 14% clear for handle and logo to be added in overlay later. Editorial magazine layout energy. Shallow depth of field softens the tablet and background.",
+      "continuity": {
+        "connectsToNext": "the tablet becomes the subject of slide 02 — camera pulls in toward the glowing screen"
+      },
+      "character": true,
+      "characterHint": "Relaxed confident stance · three-quarter turn toward camera-left light · one hand loosely holding the tablet at waist height, the other resting in a jacket pocket or at his side · slight half-smile of quiet authority · neither posed nor candid · intense but calm eyes looking just past the camera into the middle distance",
+      "textPayload": {
+        "margin": "hero",
+        "renderInImage": {
+          "eyebrow": {
+            "text": "CARRUSEL · IA PARA CREADORES",
+            "style": "label-with-rule",
+            "position": "top-left",
+            "color": "dark",
+            "letterSpacing": "wide"
+          },
+          "headline": {
+            "text": "ESTA IA YA DISEÑA MEJOR QUE UN JUNIOR",
+            "style": "display-large",
+            "position": "mid-left",
+            "color": "light",
+            "maxLines": 4,
+            "break_after": "YA"
+          },
+          "subhead": {
+            "text": "GPT-IMAGE-2 — lo nuevo de OpenAI",
+            "style": "serif-elegant",
+            "italic": true,
+            "position": "mid-left",
+            "color": "light-muted"
+          }
+        },
+        "renderInOverlay": {
+          "handle": true,
+          "logo": true,
+          "logoPosition": "bottom-right"
+        }
+      },
+      "dataPoints": [],
+      "brandsReferenced": []
+    }
+  ]
+}

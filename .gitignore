@@ -30,6 +30,9 @@ desktop.ini
 .idea/
 *.swp
 
+# Memory system (privado — acumula lineamientos personales)
+memory.json
+
 # Claude Code local
 .claude/settings.local.json
 .claude/worktrees/

@@ -1,0 +1,40 @@
+{
+  "concept": "4-skills-claude-ecosistema",
+  "slug": "4-skills-claude-ecosistema",
+  "date": "20260423",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 1,
+  "pillar": "educativo",
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D97856",
+    "accentColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional · terracotta-amber rim light on subject · subtle golden fill right",
+    "mood": "editorial cinematic · hero portrait with voxel mascot companion · dark boutique · dramatic warm glow",
+    "recurringProp": "pixel-voxel 3D terracotta orange Claude mascot (blocky Minecraft-like creature with two dot eyes) standing on desk, same style as slides 03-06",
+    "backgroundFamily": "deep black #050505 wall with radial terracotta glow centered on mascot and subject, clean negative space"
+  },
+  "images": [
+    {
+      "id": "slide-01",
+      "filename": "slide-01-hook.png",
+      "narrativeBeat": "hook",
+      "character": true,
+      "characterPose": "man seated at dark desk, 3/4 angle facing slightly right, calm confident gaze at camera, right hand resting near the voxel mascot as if introducing it, left hand on the desk surface",
+      "characterHint": "seated at desk 3/4 angle, introducing the voxel mascot beside him, confident direct gaze — refs [1, 5, 6, 7]",
+      "concept": "IMPACTFUL HERO COMPOSITION. Cinematic editorial portrait on deep black #050505 background. Left side (50% of frame): a person seated at a dark matte desk, 3/4 left angle, body from mid-torso up visible, calm confident direct gaze into camera, right hand gently extended toward the mascot beside them. Right side of the desk: a 3D VOXEL PIXEL-ART CHARACTER MASCOT in warm terracotta orange (#D97856) — same blocky Minecraft-like cubic body with two rectangular dot eyes, short cubic arms raised in a friendly wave pose, matte clay finish with subtle 3D shading. The mascot stands on the desk at chest-height next to the person. Behind the mascot: a LARGE GLOWING TERRACOTTA ASTERISK / STARBURST SYMBOL floating in mid-air (the Claude symbol) — bright terracotta color with a soft halo bloom, rendered as a sharp 3D sculptural object about 30-35% of frame width, suggesting authority and identity. Radial terracotta-amber glow behind the mascot and symbol fades to deep black at the frame edges. Warm directional rim light from camera-left wraps the person's jaw/shoulder in gold-terracotta. Clear negative space in top 35% and extreme left 5% for headline overlay. Subtle film grain, cinematic dark luxury finish, editorial boutique. NO TEXT in image. 4:5 vertical composition.",
+      "composition": "Split frame · left person 3/4 angle with hand toward mascot · right voxel mascot + floating terracotta asterisk symbol · radial warm glow · top 35% empty for headline",
+      "textPayload": null
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.2",
+    "generatedBy": "manual-hook-regen-with-mascot",
+    "generatedAt": "2026-04-24T14:45:00.000Z",
+    "brandConfig": "brand.config.json",
+    "handle": "@alexemprendee",
+    "brandName": "Alexander Cast",
+    "regenReason": "User feedback: en el hook quiero a Alexander junto al mascot Claude + el logo Claude (asterisk terracotta) MUY IMPACTANTE integrado en la escena."
+  }
+}

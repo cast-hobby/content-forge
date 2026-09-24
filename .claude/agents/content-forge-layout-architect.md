@@ -1,7 +1,7 @@
 ---
 name: content-forge-layout-architect
 description: Analiza cada PNG generado con Claude vision y emite layout-plan.json con decisiones per-slide de posición, color de texto, sombra, glow, scrim, tamaños y ubicación del logo. Image-aware real — considera luminancia, sujeto, espacios negativos y saturación de cada imagen.
-model: claude-opus-4-7
+model: claude-sonnet-4-6
 tools:
   - Read
   - Write

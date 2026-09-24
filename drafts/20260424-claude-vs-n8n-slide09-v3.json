@@ -1,0 +1,35 @@
+{
+  "concept": "claude-vs-n8n",
+  "slug": "claude-vs-n8n",
+  "date": "20260424",
+  "platform": "ig-carousel",
+  "aspectRatio": "4:5",
+  "slideCount": 1,
+  "sceneSeed": {
+    "dominantColor": "#050505",
+    "secondaryColor": "#D97856",
+    "accentColor": "#D4AF37",
+    "lightAngle": "camera-left warm directional",
+    "mood": "editorial cinematic · dark boutique",
+    "recurringProp": "pixel-voxel 3D cubic Claude mascot in terracotta orange",
+    "backgroundFamily": "deep black #050505"
+  },
+  "images": [
+    {
+      "id": "slide-09",
+      "filename": "slide-09-cta.png",
+      "narrativeBeat": "cta",
+      "character": true,
+      "characterPose": "standing 3/4 angle right of center, mid-chest up, polo negro, visible dark hair combed back on top of head, warm confident slight smile, direct gaze — refs [1, 5, 6, 7]",
+      "concept": "Portrait photograph, no text, no letters, no numbers. Deep black background. Bald-top-of-head forbidden. Cap-on-head forbidden. Hat-on-head forbidden. RIGHT side of frame: a man, mid-chest up, wearing black polo, NO CAP NO HAT NO HEADWEAR, his SHORT DARK HAIR IS CLEARLY VISIBLE on top of his head (scalp covered with natural hair, not bald, not covered by any accessory), his hair is combed back slightly, showing on the top of his head. Warm confident gaze, slight smile. LEFT side of frame: blocky terracotta voxel character mascot standing on floor. Soft warm terracotta glow behind. Top 25% empty dark, bottom 25% empty dark. Matte cinematic grain. No text. The head of the man is fully visible with natural hair — no baseball cap, no snapback, no beanie, no fitted cap, no trucker hat, no hat of any kind. Just hair. 4:5 vertical portrait.",
+      "composition": "Man right 55% BARE HEAD WITH HAIR VISIBLE · voxel mascot left 45% · dark background · warm glow",
+      "textPayload": null
+    }
+  ],
+  "meta": {
+    "schemaVersion": "1.2",
+    "generatedBy": "manual-slide09-v3-no-hat",
+    "generatedAt": "2026-04-24T20:05:00.000Z",
+    "regenReason": "Tercer intento sin gorra. Énfasis en 'hair visible on top of head combed back' + lista explicita de tipos de gorra prohibidos."
+  }
+}

@@ -26,21 +26,30 @@
     "claude-code"
   ],
   "scripts": {
+    "start": "node tools/overlay-editor/server.mjs",
+    "editor": "node tools/overlay-editor/server.mjs",
     "setup": "node scripts/setup.mjs",
+    "generate": "node scripts/generate-social.mjs",
+    "compose": "node scripts/compose-overlay.mjs",
+    "clone": "node scripts/clone-from-url.mjs",
+    "brand-overlay": "node scripts/brand-overlay.mjs",
     "analyze-character": "node scripts/analyze-character.mjs",
     "ship": "node scripts/ship-content.mjs",
-    "generate": "node scripts/generate-social.mjs",
-    "compose": "node scripts/compose-overlay.mjs"
+    "quality:check": "node scripts/validate-system.mjs",
+    "memory:view": "node -e \"import('./scripts/load-memory.mjs').then(m=>m.loadMemory()).then(d=>console.log(JSON.stringify(d,null,2)))\"",
+    "memory:reset": "node -e \"const fs=await import('node:fs/promises');await fs.copyFile('memory.json.template','memory.json');console.log('memory.json reset')\""
   },
   "dependencies": {
-    "@google/genai": "^1.0.0",
-    "@resvg/resvg-js": "^2.6.2",
-    "sharp": "^0.33.0",
     "@fontsource/anton": "^5.0.0",
     "@fontsource/inter": "^5.0.0",
+    "@fontsource/montserrat": "^5.2.8",
+    "@google/genai": "^1.0.0",
+    "@resvg/resvg-js": "^2.6.2",
     "dotenv": "^16.4.5",
+    "openai": "^6.34.0",
     "picocolors": "^1.0.0",
-    "prompts": "^2.4.2"
+    "prompts": "^2.4.2",
+    "sharp": "^0.33.0"
   },
   "engines": {
     "node": ">=20.0.0"

@@ -37,20 +37,27 @@ Antes de hacer cualquier cosa:
 
 3. **Si `content.hashtags` está vacío** en el config → avisa al final del caption que son genéricos.
 
-## Workflow de 7 etapas
+## Workflow de 9 etapas
 
 Cada etapa es un sub-agente o script. Orden estricto:
 
 | # | Etapa | Quién ejecuta | Output |
 |---|---|---|---|
-| 1 | Brief architect | sub-agente `content-forge-brief-architect` | `drafts/YYYYMMDD-<slug>-brief.json` |
-| 2 | Generate PNGs + character refs | `scripts/generate-social.mjs` | `slide-XX.png` + `manifest.json` |
+| 0.5 | **Research** (solo si el topic requiere datos factuales) | sub-agente `content-forge-researcher` | `drafts/YYYYMMDD-<slug>-research.md` |
+| 1 | Brief architect (con research opcional + sceneSeed + narrativa) | sub-agente `content-forge-brief-architect` | `drafts/YYYYMMDD-<slug>-brief.json` |
+| 2 | Generate PNGs (gpt-image-2 + Gemini swap + refs compartidas) | `scripts/generate-social.mjs` | `slide-XX.png` + `manifest.json` |
+| 2.5 | **Brand overlay** (Clearbit logos sobre slides con marcas) | `scripts/brand-overlay.mjs` | `slide-XX-branded.png` + `brand-overlay-manifest.json` |
 | 3 | Visual QA | sub-agente `content-forge-visual-qa` | `qa-report.json` |
 | 3.5 | Layout analysis (image-aware) | sub-agente `content-forge-layout-architect` | `layout-plan.json` |
-| 4 | Copy overlay | sub-agente `content-forge-copy-overlay` | `overlay-copy.json` |
-| 5 | Compose overlay + logo | `scripts/compose-overlay.mjs` | `slide-XX-final.png` |
-| 6 | Caption writer | sub-agente `content-forge-caption-writer` | `caption.md` |
+| 4 | Copy overlay (consume dataPoints con cita de fuente) | sub-agente `content-forge-copy-overlay` | `overlay-copy.json` |
+| 5 | Compose overlay + logo propio | `scripts/compose-overlay.mjs` | `slide-XX-final.png` |
+| 6 | Caption writer (cita fuentes si aplica) | sub-agente `content-forge-caption-writer` | `caption.md` |
 | 7 | Calendar publisher | sub-agente `content-forge-calendar-publisher` | `output/calendar/...` |
+
+### Etapas condicionales
+
+- **0.5 Research** corre solo si el topic tiene señales de data factual (cifras, marcas, comparativas, historia). brief-architect lo decide.
+- **2.5 Brand overlay** corre solo si algún slide tiene `brandsReferenced[]` no vacío. Si todos los slides vienen sin marca externa, se salta.
 
 Tú coordinas los agentes. El usuario da el topic inicial y confirma milestones clave.
 
@@ -64,20 +71,44 @@ O granular:
 
 ```bash
 npm run generate -- --concept=<slug> --platform=<x> --brief=drafts/...
-npm run compose -- --dir=output/social/...
+# opciones del validador de texto:
+#   --max-retries=2        (default 1; hasta 3)
+#   --skip-validation=true (desactiva QA)
+npm run brand-overlay -- --dir=output/social/<folder>
+npm run compose -- --dir=output/social/<folder>
 ```
+
+## Clone desde URL (viral reinterpretation)
+
+Cuando el usuario pasa un link de un post/carrusel ajeno y pide "hazme lo mismo
+con mi imagen":
+
+```bash
+npm run clone -- --url=https://www.instagram.com/p/XYZ/
+# → descarga slides + caption a output/clones/<run>/source/
+# → luego invoca al agente content-forge-clone-analyzer sobre ese directorio
+# → produce drafts/<run>-brief.json con tu character + tu voz + tu handle
+# → continúa con npm run generate → brand-overlay → compose normal
+```
+
+Requisitos: `APIFY_API_TOKEN` en `.env.local`. Si no lo tiene, el script falla
+con instrucciones de cómo obtenerlo. El clone NUNCA copia texto literal —
+reinterpreta con tu voz en tu idioma.
 
 ## Sub-agentes disponibles
 
-Los 7 viven en `.claude/agents/`:
+Viven en `.claude/agents/`:
 
-1. `content-forge-brief-architect` — diseña briefs desde topic libre
-2. `content-forge-character-director` — (opcional) refina casting del personaje por slide
-3. `content-forge-visual-qa` — valida PNGs con Claude vision
-4. `content-forge-layout-architect` — analiza imágenes y decide layout
-5. `content-forge-copy-overlay` — redacta headlines/body por slide
-6. `content-forge-caption-writer` — caption IG + hashtags
-7. `content-forge-calendar-publisher` — agenda en calendario editorial
+1. `content-forge-researcher` — investiga topics factuales con WebSearch y produce research-notes.md con datos citados (se invoca desde brief-architect cuando aplica)
+2. `content-forge-brief-architect` — diseña briefs desde topic libre, invoca al researcher, genera sceneSeed + narrativa continua
+3. `content-forge-character-director` — (opcional) refina casting del personaje por slide
+4. `content-forge-visual-qa` — valida PNGs con Claude vision (mood, compliance de marca)
+5. `content-forge-text-validator` — valida con Gemini Vision que el texto renderizado coincide con el brief carácter por carácter, detecta typos/drift, sugiere re-generación
+6. `content-forge-layout-architect` — analiza imágenes y decide layout
+7. `content-forge-copy-overlay` — redacta micro-copy de overlay + QA del texto integrado en imagen
+8. `content-forge-caption-writer` — caption IG + hashtags
+9. `content-forge-calendar-publisher` — agenda en calendario editorial
+10. `content-forge-clone-analyzer` — analiza un carrusel ajeno descargado por `clone-from-url.mjs` y produce un brief con TU branding, character, voz y handle (nunca copia literal)
 
 ## Reglas duras (NO negociables)
 

@@ -14,19 +14,28 @@ Resultado: **apareces tú** — el mismo tú — en cada carrusel. Autoridad vis
 
 ## Cómo funciona técnicamente
 
-No es un LoRA entrenado (eso requiere GPU + horas). Usa una capacidad nativa de Gemini 2.5 Flash Image: aceptar imágenes de referencia en el mismo call de generación.
+No es un LoRA entrenado (eso requiere GPU + horas). Content Forge usa un **pipeline de 2 fases** que desacopla composición e identidad:
 
 El flujo por cada slide humano:
 
 ```
-1. El brief marca este slide como "requires character"
-2. El character-director elige 2-4 refs apropiadas para el mood
-3. Esas refs se envían como inlineData al call de Gemini
-4. El prompt incluye "same person as reference images"
-5. Gemini genera una escena nueva manteniendo identidad
+Fase A — Composición (gpt-image-2, OpenAI):
+  1. El brief marca este slide como "requires character"
+  2. gpt-image-2 genera la escena con un "placeholder humano genérico"
+     (Latin American, 30s, warm presence) — sin detalle facial específico
+  3. Se obtiene una imagen editorial de calidad premium
+     (luz cinematográfica, composición dirigida, mood boutique)
+
+Fase B — Identity swap (gemini-2.5-flash-image, Google):
+  4. El character-director elige 2-4 refs apropiadas para el mood
+  5. Gemini recibe: imagen de Fase A + refs reales + prompt de swap
+  6. Reemplaza la identidad del placeholder por la tuya preservando
+     composición, luz, pose, wardrobe silhouette y mood
 ```
 
-**Fidelidad esperada: ~85%.** Los rasgos faciales se reconocen. El outfit exacto no se replica (pero sí "estilo similar"). Detalles únicos como lunares o tatuajes raramente se replican.
+**Fidelidad esperada: ~95%.** Al separar los dos problemas (composición vs identidad) cada modelo hace lo que mejor hace. Los rasgos faciales se reconocen mucho mejor que con un approach single-pass porque Gemini solo tiene que resolver la cara, no la escena completa.
+
+Si Gemini no devuelve imagen en el swap, el pipeline hace fallback a la composición base (sin tu cara pero con calidad editorial). El manifest.json registra `swapFallback: true` cuando esto ocurre.
 
 Para 100% fidelidad necesitas LoRA. Ver `docs/advanced/lora-training.md` (próximamente).
 
